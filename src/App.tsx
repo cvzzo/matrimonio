@@ -53,7 +53,7 @@ function App() {
       <div className={`overlay ${menuOpen ? "open" : ""}`} onClick={() => setMenuOpen(false)} />
 
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/contatti" element={<Contatti />} />
         <Route path="/lunadimiele" element={<Lunadimiele />} />
