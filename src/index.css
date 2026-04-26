@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Font-testo";
+  src: url("./assets/fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf")
+    format("truetype"); /* Opzionale, come fallback */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font-titolo";
+  src: url("./assets/fonts/milton_one/Milton_One.otf")
+    format("truetype"); /* Opzionale, come fallback */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font-sezioni";
+  src: url("./assets/fonts/hijrnotes/Hijrnotes_PERSONAL_USE_ONLY.ttf")
+    format("truetype"); /* Opzionale, come fallback */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Font-data";
+  src: url("./assets/fonts/Libertinus_Mono/LibertinusMono-Regular.ttf")
+    format("truetype"); /* Opzionale, come fallback */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "Font-testo", serif;
+  background-image: url('./assets/white-texture.png');
+  background-repeat: repeat;
+  background-size: auto;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+}
+
+/* .cormorant-garamond-<uniquifier> {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */

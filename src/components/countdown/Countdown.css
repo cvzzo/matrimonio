@@ -1,0 +1,84 @@
+/* Centra l'orologio e dà uno sfondo neutro/scuro per farlo risaltare */
+.countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.flip-clock-container {
+    display: flex;
+    gap: 15px; /* Spazio tra i blocchi */
+}
+
+.flip-unit {
+    position: relative; /* Serve per posizionare la riga centrale */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    min-width: 90px;
+    padding: 20px 10px 15px 10px;
+    overflow: hidden; /* Mantiene la riga centrale dentro i bordi */
+}
+
+/* --- Il trucco per l'effetto Flip Clock (la riga orizzontale) --- */
+.flip-unit::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1); /* Luce per dare tridimensionalità */
+    transform: translateY(-50%);
+    z-index: 1; /* Si posiziona sopra lo sfondo ma sotto il testo */
+}
+
+/* Stile dei Numeri */
+.number {
+    position: relative;
+    z-index: 2; /* Sopra la riga centrale */
+    color: #1a1a1a;
+    font-size: 55px;
+    font-family: 'Font-data';
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+/* Stile delle Etichette sotto i numeri */
+.label {
+    position: relative;
+    z-index: 2;
+    color: #888888; /* Testo grigio chiaro */
+    font-size: 11px;
+    font-family: 'Font-data';
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+.countdown-completato{
+    color: #1a1a1a;
+    font-size: 40px;
+    font-family: 'Font-testo';
+    font-weight: 200;
+}
+/* Design Responsivo: rimpicciolisce su schermi piccoli */
+@media (max-width: 600px) {
+    .flip-clock-container {
+        gap: 8px;
+    }
+    .flip-unit {
+        min-width: 65px;
+        padding: 15px 5px 10px 5px;
+    }
+    .number {
+        font-size: 35px;
+        margin-bottom: 8px;
+    }
+    .label {
+        font-size: 9px;
+    }
+}
