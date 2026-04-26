@@ -1,4 +1,5 @@
 import Countdown from "react-countdown";
+import type { CountdownRendererFn } from "react-countdown";
 import "./Countdown.css"; // Assicurati di importare il CSS
 
 const CountdownComponent = () => {
@@ -6,7 +7,7 @@ const CountdownComponent = () => {
     const dataTarget = new Date("2027-06-20T16:00:00").getTime();
 
     // Questa funzione costruisce la struttura HTML personalizzata
-    const renderer = ({ days, hours, minutes, seconds, completed }) => {
+    const renderer: CountdownRendererFn = ({ days, hours, minutes, seconds, completed }) => {
         if (completed) {
             return <div className="countdown-completato">È il grande giorno!</div>;
         } else {
