@@ -1,0 +1,9 @@
+{
+    "routes": [
+      { "src": "/", "dest": "/" },
+      { "src": "/faq", "dest": "/" },
+      { "src": "/contatti", "dest": "/" },
+      { "src": "/lunadimiele", "dest": "/" },
+      { "src": "/rsvp", "dest": "/" }
+    ]
+  }
