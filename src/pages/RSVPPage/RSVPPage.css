@@ -1,0 +1,48 @@
+.ws-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.ws-form input,
+.ws-form select,
+.ws-form textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #c9b49a;
+  background: rgba(255, 255, 255, 0.6);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  color: #3a2e24;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.ws-form input:focus,
+.ws-form select:focus,
+.ws-form textarea:focus {
+  border-color: #8a6a4a;
+}
+.ws-form button {
+  padding: 1rem;
+  background: #5a4a3a;
+  color: #f0ebe3;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+.ws-form button:hover {
+  background: #3a2e24;
+}
+.ws-form label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #a08060;
+  margin-bottom: -0.5rem;
+}

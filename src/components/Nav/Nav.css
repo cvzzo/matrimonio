@@ -1,0 +1,94 @@
+.ws-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.4s, backdrop-filter 0.4s;
+}
+.ws-nav.scrolled {
+  background: rgba(248, 246, 242, 0.96);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
+}
+.ws-nav-logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.4s;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+.ws-nav.scrolled .ws-nav-logo {
+  color: #5a4a3a;
+  text-shadow: none;
+}
+.ws-hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+}
+.ws-hamburger span {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: #fff;
+  transition: background 0.4s, transform 0.3s, opacity 0.3s;
+}
+.ws-nav.scrolled .ws-hamburger span {
+  background: #5a4a3a;
+}
+.ws-hamburger.open span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+.ws-hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.ws-hamburger.open span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+.ws-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: rgba(90, 74, 58, 0.97);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s;
+}
+.ws-menu-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.ws-menu-overlay a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #f0ebe3;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.ws-menu-overlay a:hover {
+  color: #d4b896;
+}
+
+@media (max-width: 640px) {
+  .ws-nav {
+    padding: 1rem;
+  }
+}

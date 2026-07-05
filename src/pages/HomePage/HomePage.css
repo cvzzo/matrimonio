@@ -1,0 +1,165 @@
+/* HERO */
+.ws-hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ws-hero video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.ws-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  z-index: 1;
+}
+.ws-hero-placeholder {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #b8a89a 0%, #8c7b6b 40%, #c4a882 100%);
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ws-hero-placeholder-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.ws-hero-title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 5vh;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 1.2s 0.3s forwards;
+}
+.ws-hero-title h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(3.5rem, 10vw, 7rem);
+  color: #fff;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+  line-height: 1;
+}
+.ws-hero-title p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.7rem, 2vw, 0.85rem);
+  letter-spacing: 0.4em;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 0.8rem;
+}
+@keyframes fadeUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* COUNTDOWN */
+.ws-countdown {
+  padding: 2rem 2rem 4rem;
+  text-align: center;
+}
+.ws-section-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #a08060;
+  margin-bottom: 2.5rem;
+}
+.ws-countdown-grid {
+  display: flex;
+  justify-content: center;
+  gap: clamp(1rem, 4vw, 3rem);
+  flex-wrap: wrap;
+}
+.ws-countdown-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.ws-countdown-num {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 300;
+  color: #3a2e24;
+  line-height: 1;
+  min-width: 2ch;
+  display: block;
+}
+.ws-countdown-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #a08060;
+  margin-top: 0.4rem;
+}
+.ws-countdown-sep {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #c9b49a;
+  align-self: flex-start;
+  padding-top: 0.3rem;
+  font-weight: 300;
+}
+
+/* STORY */
+.ws-story {
+  padding: 4rem 2rem 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.ws-story h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #a08060;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.citazione {
+  font-style: italic;
+  color: #5a4a3a;
+  line-height: 1.6;
+  font-size: clamp(1.4rem, 3vw, 1.4rem);
+}
+.citazione-nome {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #a08060;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .ws-countdown-sep {
+    display: none;
+  }
+  .ws-story {
+    padding: 3rem 1.2rem 1rem;
+  }
+}

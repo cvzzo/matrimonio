@@ -1,0 +1,48 @@
+.ws-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+.ws-timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #c9b49a;
+}
+.ws-tl-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.ws-tl-item::before {
+  content: "";
+  position: absolute;
+  left: -2.3rem;
+  top: 0.4rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c9b49a;
+  border: 2px solid #f8f6f2;
+  box-shadow: 0 0 0 1px #c9b49a;
+}
+.ws-tl-time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #a08060;
+  margin-bottom: 0.2rem;
+}
+.ws-tl-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #3a2e24;
+  margin-bottom: 0.2rem;
+}
+.ws-tl-desc {
+  font-size: 0.95rem;
+  color: #7a6050;
+  line-height: 1.6;
+}

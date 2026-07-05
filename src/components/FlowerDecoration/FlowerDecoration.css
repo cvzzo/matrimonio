@@ -1,0 +1,11 @@
+.ws-flowers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.ws-flowers img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}

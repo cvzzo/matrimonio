@@ -1,0 +1,22 @@
+.ws-faq-item {
+  border-bottom: 1px solid #e0d5c8;
+  padding: 1.2rem 0;
+}
+.ws-faq-q {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5a4a3a;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ws-faq-a {
+  font-size: 1rem;
+  color: #7a6050;
+  line-height: 1.7;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+}
