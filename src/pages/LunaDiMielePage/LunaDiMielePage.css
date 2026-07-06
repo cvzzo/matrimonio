@@ -23,3 +23,11 @@
   color: #5a4a3a;
   line-height: 1.6;
 }
+.ws-lm-todo {
+  color: #b09070;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.ws-lm-outro {
+  margin-top: 2rem;
+}

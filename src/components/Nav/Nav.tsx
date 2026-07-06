@@ -1,30 +1,28 @@
+import { Link, useLocation } from "react-router-dom";
 import { NAV_ITEMS } from "../../constants/wedding";
 import type { NavItem } from "../../types";
 import "./Nav.css";
 
 interface NavProps {
   scrolled: boolean;
-  currentPage: string;
   menuOpen: boolean;
   onToggleMenu: () => void;
-  onNavigate: (id: string) => void;
 }
 
-export function Nav({
-  scrolled,
-  currentPage,
-  menuOpen,
-  onToggleMenu,
-  onNavigate,
-}: NavProps) {
+function pathFor(id: string): string {
+  return id === "home" ? "/" : `/${id}`;
+}
+
+export function Nav({ scrolled, menuOpen, onToggleMenu }: NavProps) {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
   return (
     <>
-      <nav
-        className={`ws-nav${scrolled || currentPage !== "home" ? " scrolled" : ""}`}
-      >
-        <div className="ws-nav-logo" onClick={() => onNavigate("home")}>
+      <nav className={`ws-nav${scrolled || !isHome ? " scrolled" : ""}`}>
+        <Link className="ws-nav-logo" to="/">
           S &amp; D
-        </div>
+        </Link>
         <button
           className={`ws-hamburger${menuOpen ? " open" : ""}`}
           onClick={onToggleMenu}
@@ -38,16 +36,9 @@ export function Nav({
 
       <div className={`ws-menu-overlay${menuOpen ? " open" : ""}`}>
         {NAV_ITEMS.map((item: NavItem) => (
-          <a
-            key={item.id}
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              onNavigate(item.id);
-            }}
-          >
+          <Link key={item.id} to={pathFor(item.id)}>
             {item.label}
-          </a>
+          </Link>
         ))}
       </div>
     </>

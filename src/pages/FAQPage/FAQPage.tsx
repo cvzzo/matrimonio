@@ -7,8 +7,8 @@ export function FAQPage() {
   const [open, setOpen] = useState<number | null>(null);
   return (
     <div
-      className="ws-texture-section"
-      style={{ minHeight: "100vh", backgroundImage: `url(${texture})` }}
+      className="ws-texture-section ws-texture-section--full"
+      style={{ backgroundImage: `url(${texture})` }}
     >
       <div className="ws-page">
         <h1 className="ws-page-title">FAQ</h1>
@@ -20,7 +20,7 @@ export function FAQPage() {
               onClick={() => setOpen(open === i ? null : i)}
             >
               {faq.q}
-              <span style={{ fontSize: "1.2rem", color: "#c9b49a" }}>
+              <span className="ws-faq-toggle">
                 {open === i ? "−" : "+"}
               </span>
             </div>

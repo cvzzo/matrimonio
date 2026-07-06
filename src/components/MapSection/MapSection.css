@@ -57,6 +57,9 @@
   text-transform: uppercase;
   color: #a08060;
 }
+.ws-map-cta {
+  text-align: center;
+}
 .ws-map-btn {
   display: inline-block;
   margin-top: 1.2rem;

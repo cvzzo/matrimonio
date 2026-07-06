@@ -4,8 +4,8 @@ import "./LunaDiMielePage.css";
 export function LunaDiMielePage() {
   return (
     <div
-      className="ws-texture-section"
-      style={{ minHeight: "100vh", backgroundImage: `url(${texture})` }}
+      className="ws-texture-section ws-texture-section--full"
+      style={{ backgroundImage: `url(${texture})` }}
     >
       <div className="ws-page">
         <h1 className="ws-page-title">Luna di Miele</h1>
@@ -32,20 +32,12 @@ export function LunaDiMielePage() {
           ].map(({ label, todo }) => (
             <div className="ws-lm-card" key={label}>
               <h3>{label}</h3>
-              <p
-                style={{
-                  color: "#b09070",
-                  fontStyle: "italic",
-                  fontSize: "0.9rem",
-                }}
-              >
-                {todo}
-              </p>
+              <p className="ws-lm-todo">{todo}</p>
             </div>
           ))}
         </div>
         {/* TODO: Inserisci IBAN o link alla lista nozze */}
-        <div className="ws-placeholder-block" style={{ marginTop: "2rem" }}>
+        <div className="ws-placeholder-block ws-lm-outro">
           <p>💝 TODO — IBAN o link lista nozze per contribuire al viaggio</p>
         </div>
       </div>

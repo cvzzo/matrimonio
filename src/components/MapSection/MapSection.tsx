@@ -23,7 +23,7 @@ export function MapSection() {
         />
       </div>
 
-      <div style={{ textAlign: "center" }}>
+      <div className="ws-map-cta">
         {/* TODO: Verifica che il link si apra sul posto giusto prima di pubblicare */}
         <a
           href={MAPS_DIRECTIONS_URL}

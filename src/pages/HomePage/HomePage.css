@@ -92,6 +92,11 @@
   gap: clamp(1rem, 4vw, 3rem);
   flex-wrap: wrap;
 }
+.ws-countdown-col {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(1rem, 4vw, 3rem);
+}
 .ws-countdown-item {
   text-align: center;
   display: flex;

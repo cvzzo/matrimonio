@@ -4,8 +4,8 @@ import "./RSVPPage.css";
 export function RSVPPage() {
   return (
     <div
-      className="ws-texture-section"
-      style={{ minHeight: "100vh", backgroundImage: `url(${texture})` }}
+      className="ws-texture-section ws-texture-section--full"
+      style={{ backgroundImage: `url(${texture})` }}
     >
       <div className="ws-page">
         <h1 className="ws-page-title">RSVP</h1>

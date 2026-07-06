@@ -13,6 +13,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.ws-faq-toggle {
+  font-size: 1.2rem;
+  color: #c9b49a;
+}
 .ws-faq-a {
   font-size: 1rem;
   color: #7a6050;

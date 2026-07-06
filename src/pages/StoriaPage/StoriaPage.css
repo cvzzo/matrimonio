@@ -1,1 +1,61 @@
 /* .capitolo-storia non ha stili dedicati nel design originale: eredita il testo dal blocco .ws-letter */
+.titolo-capitolo-storia{
+  font-family: "Great Vibes", cursive;
+  font-weight:lighter;
+  font-size: clamp(2rem, 6vw, 2.8rem);
+  letter-spacing: 0.02em;
+  color: #5a4a3a;
+  /* margin-top: 1rem; */
+  text-align: center;
+}
+
+.ws-page .ws-letter p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.capitolo-storia-row {
+  text-align: left;
+  align-items: start;
+  /* margin: 2rem 0; */
+}
+
+.capitolo-storia-row>p{
+    position: relative;
+    top: -8px;
+}
+.capitolo-storia-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.capitolo-storia-img {
+  float: left;
+  margin-right: 2rem;
+  margin-left: 0;
+  object-fit: cover;
+}
+.capitolo-storia-row--img-right .capitolo-storia-img {
+  float: right;
+  margin-left: 2rem;
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .capitolo-storia-img {
+    width: 190px;
+    height: 190px;
+    margin-right: 1rem;
+    margin-left: 0;
+  }
+  .capitolo-storia-row--img-right .capitolo-storia-img {
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+  /* colonna troppo stretta accanto alla foto: giustificare forza sillabazione
+     su quasi ogni riga e spaziature irregolari, quindi qui si torna a sinistra */
+  .capitolo-storia-row > p {
+    text-align: left;
+  }
+}

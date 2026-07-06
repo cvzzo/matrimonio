@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Nav } from "./components/Nav/Nav";
 import { useCountdown } from "./hooks/useCountdown";
 import { WEDDING_DATE } from "./constants/wedding";
@@ -14,7 +15,7 @@ import "./styles/shared.css";
 import "./App.css";
 
 export default function App() {
-  const [page, setPage] = useState<string>("home");
+  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [scrolled, setScrolled] = useState<boolean>(false);
   const countdown = useCountdown(WEDDING_DATE);
@@ -28,31 +29,26 @@ export default function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
     setMenuOpen(false);
-  }, [page]);
-
-  const navigate = (id: string) => {
-    setPage(id);
-    setMenuOpen(false);
-  };
+  }, [location.pathname]);
 
   return (
     <div className="ws-app">
       <Nav
         scrolled={scrolled}
-        currentPage={page}
         menuOpen={menuOpen}
         onToggleMenu={() => setMenuOpen(!menuOpen)}
-        onNavigate={navigate}
       />
 
-      {page === "home" && <HomePage countdown={countdown} />}
-      {page === "storia" && <StoriaPage />}
-      {page === "location" && <LocationPage />}
-      {page === "rsvp" && <RSVPPage />}
-      {page === "programma" && <ProgrammaPage />}
-      {page === "lunadimiele" && <LunaDiMielePage />}
-      {page === "faq" && <FAQPage />}
-      {page === "contatti" && <ContattiPage />}
+      <Routes>
+        <Route path="/" element={<HomePage countdown={countdown} />} />
+        <Route path="/storia" element={<StoriaPage />} />
+        <Route path="/location" element={<LocationPage />} />
+        <Route path="/rsvp" element={<RSVPPage />} />
+        <Route path="/programma" element={<ProgrammaPage />} />
+        <Route path="/lunadimiele" element={<LunaDiMielePage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/contatti" element={<ContattiPage />} />
+      </Routes>
     </div>
   );
 }

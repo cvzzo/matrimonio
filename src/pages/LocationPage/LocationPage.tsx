@@ -7,8 +7,8 @@ import "./LocationPage.css";
 export function LocationPage() {
   return (
     <div
-      className="ws-texture-section"
-      style={{ minHeight: "100vh", backgroundImage: `url(${texture})` }}
+      className="ws-texture-section ws-texture-section--full"
+      style={{ backgroundImage: `url(${texture})` }}
     >
       <section className="ws-hero-villa">
         <img src={villa} alt="Villa Canton" className="villa" />

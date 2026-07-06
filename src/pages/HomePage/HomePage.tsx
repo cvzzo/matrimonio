@@ -42,14 +42,7 @@ export function HomePage({ countdown }: HomePageProps) {
                 { val: countdown.secondi, label: "Secondi" },
               ] as { val: number; label: string }[]
             ).map((item, i) => (
-              <span
-                key={item.label}
-                style={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  gap: "clamp(1rem,4vw,3rem)",
-                }}
-              >
+              <span key={item.label} className="ws-countdown-col">
                 {i > 0 && <span className="ws-countdown-sep">·</span>}
                 <div className="ws-countdown-item">
                   <span className="ws-countdown-num">
