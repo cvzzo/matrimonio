@@ -30,41 +30,49 @@ export const PROGRAMMA_ITEMS = [
     time: "16:00",
     title: "Arrivo in location",
     desc: "Vi aspettiamo a Villa Canton per dare inizio alla nostra giornata.",
+    icon: "pin",
   },
   {
     time: "16:30",
     title: "Tisana fresca di benvenuto",
     desc: "Un momento di relax per accogliervi prima della cerimonia.",
+    icon: "tea",
   },
   {
     time: "17:00",
     title: "Cerimonia civile",
     desc: "Ci scambieremo le promesse davanti a voi, nel parco della villa.",
+    icon: "rings",
   },
   {
     time: "18:00",
     title: "Aperitivo in giardino",
     desc: "Festeggiamo insieme tra i profumi del giardino all'italiana.",
+    icon: "cocktail",
   },
   {
     time: "19:30",
     title: "Cena",
     desc: "La festa continua a tavola, tutti insieme.",
+    icon: "dinner",
   },
   {
     time: "21:00",
     title: "Taglio della torta e first dance",
     desc: "Il momento più dolce della serata, da condividere con tutti voi.",
+    icon: "cake",
   },
   {
     time: "21:30",
     title: "Buffet di dolci",
     desc: "Golosità per tutti gli ospiti.",
+    icon: "dessert",
   },
   {
     time: "23:00",
     title: "Si balla!",
     desc: "La pista si apre: musica e festa fino a notte fonda.",
+    icon: "disco",
   },
 ];
 
