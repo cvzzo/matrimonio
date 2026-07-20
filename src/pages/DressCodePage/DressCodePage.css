@@ -1,0 +1,33 @@
+.ws-dc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.ws-dc-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #e0d5c8;
+  padding: 1.5rem;
+  text-align: center;
+}
+.ws-dc-swatch {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #e0d5c8;
+  margin-bottom: 0.8rem;
+}
+.ws-dc-card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #a08060;
+  margin-bottom: 0.5rem;
+}
+.ws-dc-card p {
+  font-size: 0.9rem;
+  color: #7a6050;
+  line-height: 1.5;
+}

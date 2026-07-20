@@ -8,37 +8,38 @@ export function LunaDiMielePage() {
       style={{ backgroundImage: `url(${texture})` }}
     >
       <div className="ws-page">
-        <h1 className="ws-page-title">Luna di Miele</h1>
-        <p className="ws-page-sub">Il nostro viaggio da sogno</p>
-        {/* TODO: Aggiungi destinazione e descrizione narrativa del viaggio */}
-        <div className="ws-placeholder-block">
-          <p>🌍 TODO — Destinazione e descrizione del viaggio</p>
+        <h1 className="ws-page-title">Viaggio di Nozze</h1>
+        <p className="ws-page-sub">Sardegna · Chia</p>
+        {/* TODO: Aggiungi la foto del viaggio (stile hero, come quella della Location) */}
+        <div className="ws-letter">
+          <p style={{ textAlign: "center" }}>
+            Il regalo più grande che possiate farci è la vostra presenza nel
+            nostro giorno più speciale, ma se desiderate accompagnarci anche
+            nei nostri primi passi da marito e moglie, abbiamo deciso di
+            raccogliere i vostri pensieri per la nostra luna di miele.
+          </p>
+          <p>
+            La meta che abbiamo scelto è la Sardegna, un'isola magica, che
+            amiamo profondamente. Ci lasceremo cullare dalle meraviglie di
+            Chia, e dalla sua spettacolare costa di Su Giudeu, con le sue dune
+            di sabbia dorata e un mare così cristallino da togliere il fiato.
+          </p>
+          <p>
+            Ma c'è un motivo ancora più speciale che ci ha fatto battere il
+            cuore per questa destinazione: la possibilità di avere accanto a
+            noi Nala, la nostra cagnolina. Lei è a tutti gli effetti un
+            membro della nostra famiglia e non potevamo immaginare di
+            iniziare questo nuovo capitolo senza la sua allegria e le
+            impronte delle sue zampine sulla sabbia accanto alle nostre.
+          </p>
+          <p style={{ textAlign: "center" }}>Grazie di cuore,</p>
         </div>
-        <div className="ws-lm-grid">
-          {[
-            {
-              label: "Destinazione",
-              todo: "TODO — es. Maldive, Giappone, Polinesia…",
-            },
-            { label: "Periodo", todo: "TODO — es. Luglio 2027" },
-            {
-              label: "Wishlist",
-              todo: "TODO — esperienze e attività desiderate",
-            },
-            {
-              label: "Come contribuire",
-              todo: "TODO — link lista nozze o istruzioni bonifico",
-            },
-          ].map(({ label, todo }) => (
-            <div className="ws-lm-card" key={label}>
-              <h3>{label}</h3>
-              <p className="ws-lm-todo">{todo}</p>
-            </div>
-          ))}
-        </div>
-        {/* TODO: Inserisci IBAN o link alla lista nozze */}
+        <div className="ws-letter-signature">Silvia &amp; Davide</div>
+        {/* TODO: Inserisci IBAN, intestatario e causale */}
         <div className="ws-placeholder-block ws-lm-outro">
-          <p>💝 TODO — IBAN o link lista nozze per contribuire al viaggio</p>
+          <p>💝 IBAN: TODO</p>
+          <p>Intestato a: TODO</p>
+          <p>Causale: TODO</p>
         </div>
       </div>
     </div>

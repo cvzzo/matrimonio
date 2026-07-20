@@ -1,33 +1,9 @@
-.ws-lm-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-.ws-lm-card {
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid #e0d5c8;
-  padding: 1.5rem;
-  text-align: center;
-}
-.ws-lm-card h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #a08060;
-  margin-bottom: 0.8rem;
-}
-.ws-lm-card p {
-  font-size: 1rem;
-  color: #5a4a3a;
-  line-height: 1.6;
-}
-.ws-lm-todo {
-  color: #b09070;
-  font-style: italic;
-  font-size: 0.9rem;
-}
 .ws-lm-outro {
   margin-top: 2rem;
+}
+.ws-lm-outro p {
+  margin-bottom: 0.4rem;
+}
+.ws-lm-outro p:last-child {
+  margin-bottom: 0;
 }

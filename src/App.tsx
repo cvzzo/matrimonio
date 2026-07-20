@@ -9,6 +9,8 @@ import { LocationPage } from "./pages/LocationPage/LocationPage";
 import { RSVPPage } from "./pages/RSVPPage/RSVPPage";
 import { ProgrammaPage } from "./pages/ProgrammaPage/ProgrammaPage";
 import { LunaDiMielePage } from "./pages/LunaDiMielePage/LunaDiMielePage";
+import { DressCodePage } from "./pages/DressCodePage/DressCodePage";
+import { GalleryPage } from "./pages/GalleryPage/GalleryPage";
 import { FAQPage } from "./pages/FAQPage/FAQPage";
 import { ContattiPage } from "./pages/ContattiPage/ContattiPage";
 import "./styles/shared.css";
@@ -46,6 +48,8 @@ export default function App() {
         <Route path="/rsvp" element={<RSVPPage />} />
         <Route path="/programma" element={<ProgrammaPage />} />
         <Route path="/lunadimiele" element={<LunaDiMielePage />} />
+        <Route path="/dresscode" element={<DressCodePage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/contatti" element={<ContattiPage />} />
       </Routes>

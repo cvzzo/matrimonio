@@ -26,36 +26,75 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const PROGRAMMA_ITEMS = [
-  // TODO: Verifica e aggiusta tutti gli orari e le descrizioni
   {
-    time: "14:30",
-    title: "Accoglienza degli ospiti",
-    desc: "Vi aspettiamo nel giardino della villa per un aperitivo di benvenuto.",
-  },
-  {
-    time: "15:30",
-    title: "Cerimonia",
-    desc: "TODO — aggiungere tipo di cerimonia (civile/religiosa) e luogo esatto",
+    time: "16:00",
+    title: "Arrivo in location",
+    desc: "Vi aspettiamo a Villa Canton per dare inizio alla nostra giornata.",
   },
   {
     time: "16:30",
-    title: "Cocktail & Foto",
-    desc: "Festeggiamo insieme con un aperitivo all'aperto mentre i nostri fotografi immortalano i momenti.",
+    title: "Tisana fresca di benvenuto",
+    desc: "Un momento di relax per accogliervi prima della cerimonia.",
+  },
+  {
+    time: "17:00",
+    title: "Cerimonia civile",
+    desc: "Ci scambieremo le promesse davanti a voi, nel parco della villa.",
+  },
+  {
+    time: "18:00",
+    title: "Aperitivo in giardino",
+    desc: "Festeggiamo insieme tra i profumi del giardino all'italiana.",
   },
   {
     time: "19:30",
     title: "Cena",
-    desc: "TODO — aggiungere dettagli venue e menu",
+    desc: "La festa continua a tavola, tutti insieme.",
   },
   {
-    time: "23:00",
-    title: "Taglio della torta",
+    time: "21:00",
+    title: "Taglio della torta e first dance",
     desc: "Il momento più dolce della serata, da condividere con tutti voi.",
   },
   {
-    time: "23:30",
-    title: "Festa & Balli",
-    desc: "La musica ci accompagnerà fino a notte fonda — preparatevi a ballare!",
+    time: "21:30",
+    title: "Buffet di dolci",
+    desc: "Golosità per tutti gli ospiti.",
+  },
+  {
+    time: "23:00",
+    title: "Si balla!",
+    desc: "La pista si apre: musica e festa fino a notte fonda.",
+  },
+];
+
+export const RSVP_DEADLINE = "20 Aprile 2027";
+
+export const DRESS_CODE_AVOID = [
+  {
+    color: "Bianco",
+    hex: "#ffffff",
+    note: "come da tradizione, lasciamolo alla sposa",
+  },
+  {
+    color: "Azzurro",
+    hex: "#a9c4da",
+    note: "riservato allo sposo e ai testimoni",
+  },
+  {
+    color: "Lilla",
+    hex: "#c7b3dd",
+    note: "il colore scelto per le damigelle",
+  },
+  {
+    color: "Nero",
+    hex: "#2a2a2a",
+    note: "non adatto a un giorno così speciale",
+  },
+  {
+    color: "Rosso",
+    hex: "#a83a2c",
+    note: "non adatto a un giorno così speciale",
   },
 ];
 

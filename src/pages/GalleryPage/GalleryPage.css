@@ -1,0 +1,41 @@
+.citazione {
+  font-style: italic;
+  color: #5a4a3a;
+  line-height: 1.6;
+  font-size: clamp(1.4rem, 3vw, 1.4rem);
+}
+.citazione-nome {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #a08060;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.ws-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.ws-gallery-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+.ws-gallery-placeholder {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(200, 180, 160, 0.12);
+  border: 1px dashed #c9b49a;
+  text-align: center;
+}
+.ws-gallery-placeholder p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #b09070;
+}

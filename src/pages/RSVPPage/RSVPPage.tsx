@@ -1,4 +1,5 @@
 import texture from "../../assets/white-texture.png";
+import { RSVP_DEADLINE } from "../../constants/wedding";
 import "./RSVPPage.css";
 
 export function RSVPPage() {
@@ -9,10 +10,18 @@ export function RSVPPage() {
     >
       <div className="ws-page">
         <h1 className="ws-page-title">RSVP</h1>
-        {/* TODO: Imposta la data limite per la conferma */}
-        <p className="ws-page-sub">
-          Conferma la tua presenza entro il TODO — data limite
-        </p>
+        <p className="ws-page-sub">Ci sarete?</p>
+        <div className="ws-letter">
+          <p style={{ textAlign: "center" }}>
+            Per aiutarci a organizzare tutto al meglio, vi chiediamo la
+            cortesia di confermare la vostra presenza entro e non oltre il{" "}
+            {RSVP_DEADLINE}.
+          </p>
+          <p style={{ textAlign: "center" }}>
+            Qui sotto potrete confermare per voi e per la vostra famiglia,
+            segnalandoci eventuali allergie, intolleranze o menù speciali.
+          </p>
+        </div>
         <div className="ws-form">
           <label>Nome e Cognome</label>
           <input type="text" placeholder="Mario Rossi" />
@@ -26,10 +35,15 @@ export function RSVPPage() {
             <option>Io + 2</option>
             <option>Io + 3</option>
           </select>
-          <label>Intolleranze alimentari</label>
+          <label>Tipo di menù</label>
+          <select>
+            <option>Adulto</option>
+            <option>Bambino (sotto i 9 anni)</option>
+          </select>
+          <label>Allergie o intolleranze</label>
           <textarea
             rows={3}
-            placeholder="Scrivi qui eventuali intolleranze o allergie..."
+            placeholder="Scrivi qui eventuali allergie, intolleranze o menù speciali..."
           />
           <label>Partecipi?</label>
           <select>
