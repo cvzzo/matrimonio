@@ -13,7 +13,6 @@ import { DressCodePage } from "./pages/DressCodePage/DressCodePage";
 import { GalleryPage } from "./pages/GalleryPage/GalleryPage";
 import { FAQPage } from "./pages/FAQPage/FAQPage";
 import { ContattiPage } from "./pages/ContattiPage/ContattiPage";
-import "./styles/shared.css";
 import "./App.css";
 
 export default function App() {

@@ -13,7 +13,7 @@
   margin-bottom: 0.6rem;
 }
 .ws-map-venue-name {
-  font-family: "Great Vibes", cursive;
+  font-family: "Bacalisties", cursive;
   font-size: 2rem;
   color: #5a4a3a;
   text-align: center;
@@ -25,7 +25,7 @@
   letter-spacing: 0.1em;
   color: #a08060;
   text-align: center;
-  margin-bottom: 1.8rem;
+  margin-bottom: 0.8rem;
 }
 .ws-map-iframe-wrap {
   width: 100%;
@@ -62,7 +62,7 @@
 }
 .ws-map-btn {
   display: inline-block;
-  margin-top: 1.2rem;
+  /* margin-top: 1.2rem; */
   padding: 0.75rem 2rem;
   background: #5a4a3a;
   color: #f0ebe3;

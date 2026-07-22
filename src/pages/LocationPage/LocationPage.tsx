@@ -21,6 +21,7 @@ export function LocationPage() {
       </section>
       <div className="ws-page">
         <div className="ws-letter">
+        <MapSection />
           <p>
             Immersa nella splendida tenuta settecentesca di Trescore
             Balneario, questa magnifica villa è circondata da un parco
@@ -44,12 +45,11 @@ export function LocationPage() {
             gratuito, direttamente in loco, situato di fronte all'ingresso
             della Villa.
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p>
             Non vediamo l'ora di accogliervi e vivere con noi ogni istante di
             questa giornata speciale.
           </p>
         </div>
-        <MapSection />
       </div>
       <FlowerDecoration />
     </div>

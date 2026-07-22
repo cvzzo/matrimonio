@@ -9,11 +9,11 @@ import "./MapSection.css";
 export function MapSection() {
   return (
     <section className="ws-map-section">
-      <h2>Dove ci sposiamo</h2>
+      {/* <h2>Dove ci sposiamo</h2> */}
       <div className="ws-map-venue-name">{VENUE_NAME}</div>
       <div className="ws-map-venue-address">{VENUE_ADDRESS}</div>
 
-      <div className="ws-map-iframe-wrap">
+      {/* <div className="ws-map-iframe-wrap">
         <iframe
           src={MAPS_EMBED_URL}
           allowFullScreen
@@ -21,7 +21,7 @@ export function MapSection() {
           referrerPolicy="no-referrer-when-downgrade"
           title="Venue matrimonio"
         />
-      </div>
+      </div> */}
 
       <div className="ws-map-cta">
         {/* TODO: Verifica che il link si apra sul posto giusto prima di pubblicare */}

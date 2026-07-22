@@ -16,13 +16,15 @@
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
 }
 .ws-nav-logo {
-  font-family: "Great Vibes", cursive;
+  font-family: "Bacalisties", cursive;
   font-size: 1.8rem;
   color: #fff;
   cursor: pointer;
   transition: color 0.4s;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   text-decoration: none;
+  top: 5px;
+  position: relative;
 }
 .ws-nav.scrolled .ws-nav-logo {
   color: #5a4a3a;

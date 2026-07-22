@@ -1,3 +1,65 @@
+/* === Layout condiviso (ex styles/shared.css) === */
+.ws-texture-section {
+  position: relative;
+  background-size: cover;
+  background-attachment: local;
+}
+.ws-texture-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(248, 246, 242, 0.3);
+  z-index: 0;
+}
+.ws-texture-section > * {
+  position: relative;
+  z-index: 1;
+}
+.ws-texture-section--full {
+  min-height: 100vh;
+}
+.ws-page {
+  padding: 8rem 2rem 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.ws-page-title {
+  font-family: "Bacalisties", cursive;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  color: #5a4a3a;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.ws-page-sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #a08060;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.ws-placeholder-block {
+  background: rgba(200, 180, 160, 0.12);
+  border: 1px dashed #c9b49a;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.ws-placeholder-block p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #b09070;
+}
+@media (max-width: 640px) {
+  .ws-page {
+    padding: 6rem 1.2rem 3rem;
+  }
+}
+
+/* === Stili pagina === */
 .ws-programma-venue {
   margin-bottom: 3rem;
 }
@@ -18,15 +80,17 @@
   transform: translateX(-50%);
 }
 .ws-tlv2-row {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 3rem minmax(0, 1fr);
+  column-gap: 1.5rem;
+  align-items: start;
   margin-bottom: 2.5rem;
 }
 .ws-tlv2-row:last-child {
   margin-bottom: 0;
 }
 .ws-tlv2-node {
-  flex: 0 0 auto;
+  grid-column: 2;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -38,28 +102,34 @@
   color: #a08060;
   position: relative;
   z-index: 2;
+  /* centra il pallino verticalmente sull'orario */
+  margin-top: -0.95rem;
 }
 .ws-tlv2-icon-svg {
   width: 1.3rem;
   height: 1.3rem;
 }
-.ws-tlv2-col {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-}
-.ws-tlv2-side--left {
-  justify-content: flex-end;
-  padding-right: 1.5rem;
-  text-align: right;
-}
-.ws-tlv2-side--right {
-  justify-content: flex-start;
-  padding-left: 1.5rem;
-  text-align: left;
-}
 .ws-tlv2-text {
   max-width: 230px;
+  min-width: 0;
+}
+.ws-tlv2-row--left .ws-tlv2-text {
+  grid-column: 1;
+  justify-self: end;
+  text-align: right;
+}
+.ws-tlv2-row--right .ws-tlv2-text {
+  grid-column: 3;
+  justify-self: start;
+  text-align: left;
+}
+.ws-tlv2-time {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: #a08060;
+  white-space: nowrap;
 }
 .ws-tlv2-title {
   font-family: "Montserrat", sans-serif;
@@ -68,65 +138,39 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #3a2e24;
-  margin-bottom: 0.35rem;
-}
-.ws-tlv2-time-row {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 0.5rem;
-}
-.ws-tlv2-side--left .ws-tlv2-time-row {
-  justify-content: flex-end;
-}
-.ws-tlv2-side--right .ws-tlv2-time-row {
-  justify-content: flex-start;
-}
-.ws-tlv2-dash {
-  flex: 0 1 40px;
-  height: 0;
-  border-top: 1px dashed #c9b49a;
-}
-.ws-tlv2-time {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
-  color: #a08060;
-  white-space: nowrap;
+  margin-top: 0.5rem;
 }
 .ws-tlv2-desc {
   font-size: 0.8rem;
   color: #7a6050;
   line-height: 1.5;
+  margin-top: 0.35rem;
 }
 
 @media (max-width: 640px) {
   .ws-tlv2::before {
-    left: 20px;
+    /* centro del pallino: metà larghezza nodo (2.5rem / 2) */
+    left: 1.25rem;
+  }
+  .ws-tlv2-row {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    column-gap: 1rem;
   }
   .ws-tlv2-node {
-    order: -1;
+    grid-column: 1;
     width: 2.5rem;
     height: 2.5rem;
-    margin-right: 1rem;
+    margin-top: -0.7rem;
   }
   .ws-tlv2-icon-svg {
     width: 1.1rem;
     height: 1.1rem;
   }
-  .ws-tlv2-col:empty {
-    display: none;
-  }
-  .ws-tlv2-row .ws-tlv2-col {
-    flex: 1;
-    justify-content: flex-start;
+  .ws-tlv2-row--left .ws-tlv2-text,
+  .ws-tlv2-row--right .ws-tlv2-text {
+    grid-column: 2;
+    justify-self: start;
     text-align: left;
-    padding: 0;
-  }
-  .ws-tlv2-row .ws-tlv2-time-row {
-    justify-content: flex-start;
-  }
-  .ws-tlv2-dash {
-    display: none;
+    max-width: none;
   }
 }
