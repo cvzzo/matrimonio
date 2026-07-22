@@ -20,7 +20,7 @@ export function DressCodePage() {
             riservato alcuni colori speciali per noi, per i testimoni e per le
             damigelle.{" "}
           </p>
-          <p style={{ textAlign: "center", fontWeight: "bolder", textDecoration: "underline", color: "red", textTransform: "uppercase" }}>
+          <p style={{ textAlign: "center", fontWeight: "bolder", color: "black", textTransform: "uppercase" }}>
             Vi chiediamo quindi di evitare:
           </p>
         </div>
