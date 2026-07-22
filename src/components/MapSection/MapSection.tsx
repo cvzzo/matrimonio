@@ -1,6 +1,6 @@
 import {
   MAPS_DIRECTIONS_URL,
-  MAPS_EMBED_URL,
+  // MAPS_EMBED_URL,
   VENUE_ADDRESS,
   VENUE_NAME,
 } from "../../constants/wedding";

@@ -3,8 +3,8 @@ import type { NavItem } from "../types";
 export const WEDDING_DATE = new Date("2027-06-20T16:00:00");
 
 // URL embed — formato diretto, nessuna API key richiesta
-export const MAPS_EMBED_URL =
-  "https://maps.google.com/maps?q=45.7000277,9.8411298&z=17&output=embed";
+// export const MAPS_EMBED_URL =
+//   "https://maps.google.com/maps?q=45.7000277,9.8411298&z=17&output=embed";
 
 export const MAPS_DIRECTIONS_URL =
   "https://www.google.com/maps/place/Villa+Canton/@45.7000314,9.8385495,17z/data=!3m1!4b1!4m6!3m5!1s0x47815c1ab61e55d5:0x9e7b9c902b300478!8m2!3d45.7000277!4d9.8411298!16s%2Fg%2F1v_0hmcx?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D";

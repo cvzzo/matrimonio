@@ -10,13 +10,18 @@ export function DressCodePage() {
     >
       <div className="ws-page">
         <h1 className="ws-page-title">Dress Code</h1>
-        <p className="ws-page-sub">Non vediamo l'ora di vedervi al nostro grande giorno!</p>
+        <p className="ws-page-sub">
+          Non vediamo l'ora di vedervi al nostro grande giorno!
+        </p>
         <div className="ws-letter">
           <p style={{ textAlign: "center" }}>
             L'abito perfetto è quello che vi fa sentire bene, ma per aiutarvi
-            nella scelta della palette, vi lasciamo alcune indicazioni.
-            Abbiamo riservato alcuni colori speciali per noi, per i testimoni
-            e per le damigelle. Vi chiediamo quindi di evitare:
+            nella scelta della palette, vi lasciamo alcune indicazioni. Abbiamo
+            riservato alcuni colori speciali per noi, per i testimoni e per le
+            damigelle.{" "}
+          </p>
+          <p style={{ textAlign: "center", fontWeight: "bolder", textDecoration: "underline", color: "red", textTransform: "uppercase" }}>
+            Vi chiediamo quindi di evitare:
           </p>
         </div>
         <div className="ws-dc-grid">
