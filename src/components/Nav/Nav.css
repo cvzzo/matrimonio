@@ -23,9 +23,7 @@
   transition: color 0.4s;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  top: 5px;
-  position: relative;
-}
+  }
 .ws-nav.scrolled .ws-nav-logo {
   color: #5a4a3a;
   text-shadow: none;
