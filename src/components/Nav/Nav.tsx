@@ -23,19 +23,22 @@ export function Nav({ scrolled, menuOpen, onToggleMenu }: NavProps) {
     "/programma",
     "/dresscode",
     "/lunadimiele",
-    "/gallery",
     "/rsvp",
+    "/gallery",
     "/contatti",
+    "/faq",
   ];
   const hasHero = transparentTopPaths.includes(location.pathname);
   // Pagine con hero fotografica scura: logo/hamburger chiari finché la barra è trasparente
   const lightTop = [
+    "/storia",
     "/programma",
     "/dresscode",
     "/lunadimiele",
-    "/gallery",
     "/rsvp",
+    "/gallery",
     "/contatti",
+    "/faq",
   ].includes(location.pathname);
 
   return (

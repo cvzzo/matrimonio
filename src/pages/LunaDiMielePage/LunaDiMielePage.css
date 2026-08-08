@@ -1,10 +1,56 @@
 /* === Stili pagina === */
-.ws-lm-outro {
-  margin-top: 2rem;
+/* Card regalo / IBAN */
+.ws-gift-card {
+  max-width: 460px;
+  margin: 2.5rem auto 0;
+  padding: 2rem 1.8rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid #cdd8e8;
+  text-align: center;
 }
-.ws-lm-outro p {
-  margin-bottom: 0.4rem;
+.ws-gift-title {
+  font-family: "Bacalisties", cursive;
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  color: #4173B7;
+  margin-bottom: 1.5rem;
 }
-.ws-lm-outro p:last-child {
-  margin-bottom: 0;
+.ws-gift-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid #e2e8f2;
+}
+.ws-gift-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #4173B7;
+}
+.ws-gift-value {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: #17263A;
+  overflow-wrap: anywhere;
+}
+.ws-gift-iban {
+  letter-spacing: 0.08em;
+}
+.ws-gift-copy {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.9rem 1rem;
+  border: none;
+  background: #4173B7;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.ws-gift-copy:hover {
+  background: #263E5F;
 }

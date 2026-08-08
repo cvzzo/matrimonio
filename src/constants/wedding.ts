@@ -19,8 +19,8 @@ export const NAV_ITEMS: NavItem[] = [
   { id: "programma", label: "Programma" },
   { id: "dresscode", label: "Dress Code" },
   { id: "lunadimiele", label: "Luna di Miele" },
+  { id: "rsvp", label: "RSVP" },
   { id: "gallery", label: "Gallery" },
-  { id: "rsvp", label: "R.S.V.P." },
   { id: "contatti", label: "Contatti" },
   { id: "faq", label: "FAQ" },
 ];
@@ -80,60 +80,81 @@ export const RSVP_DEADLINE = "20 Aprile 2027";
 
 export const DRESS_CODE_AVOID = [
   {
-    color: "Bianco",
-    hex: "#ffffff",
-    note: "come da tradizione, lasciamolo alla sposa",
-  },
-  {
-    color: "Azzurro",
-    hex: "#a9c4da",
-    note: "riservato allo sposo e ai testimoni",
-  },
-  {
     color: "Lilla",
-    hex: "#c7b3dd",
+    hexes: ["#c7b3dd"],
     note: "il colore scelto per le damigelle",
   },
   {
-    color: "Nero",
-    hex: "#2a2a2a",
-    note: "non adatto a un giorno così speciale",
+    color: "Azzurro",
+    hexes: ["#a9c4da"],
+    note: "riservato allo sposo e ai testimoni",
   },
   {
-    color: "Rosso",
-    hex: "#a83a2c",
-    note: "non adatto a un giorno così speciale",
+    color: "Bianco",
+    hexes: ["#ffffff"],
+    note: "come da tradizione, lasciamolo alla sposa",
+  },
+  {
+    color: "Rosso e Nero",
+    hexes: ["#a83a2c", "#2a2a2a"],
+    note: "non adatti a un giorno così speciale",
   },
 ];
 
-export const FAQS = [
+export const FAQS: {
+  q: string;
+  a: string;
+  to?: string;
+  href?: string;
+  linkLabel?: string;
+}[] = [
   // TODO: Rispondi a tutte le domande con le informazioni reali
   {
     q: "Dove si svolge il matrimonio?",
-    a: "TODO — aggiungere indirizzo completo e indicazioni stradali",
+    a: "Il matrimonio si svolgerà presso la splendida Villa Canton, situata a Trescore Balneario (BG).",
+    to: "/location",
+    linkLabel: "Vai alla location",
+  },
+  {
+    q: "Come arrivo alla location?",
+    a: "Villa Canton si trova in Via G. Paglia 18, Trescore Balneario (BG). È disponibile un comodo parcheggio gratuito in loco, proprio di fronte all'ingresso.",
+    href: MAPS_DIRECTIONS_URL,
+    linkLabel: "Apri Maps",
   },
   {
     q: "C'è un dress code?",
-    a: "TODO — es. Elegante / Smart casual / Tema colore specifico",
-  },
-  {
-    q: "Ci sono opzioni per i bambini?",
-    a: "TODO — indicare se i bambini sono invitati e se ci sono servizi dedicati",
-  },
-  {
-    q: "Come arrivo alla venue?",
-    a: "TODO — indicazioni, parcheggio disponibile, eventuale navetta",
-  },
-  {
-    q: "Dove posso dormire?",
-    a: "TODO — aggiungere hotel consigliati o B&B nelle vicinanze",
+    a: "Vi chiediamo gentilmente di evitare alcuni colori, per maggiori dettagli consultate la sezione Dress Code.",
+    to: "/dresscode",
+    linkLabel: "Vai al dress code",
   },
   {
     q: "Posso portare un +1?",
-    a: "TODO — specificare la policy sugli accompagnatori",
+    a: "Vi chiediamo gentilmente di contattarci per valutare eventuali ospiti aggiuntivi.",
+    to: "/contatti",
+    linkLabel: "Contattaci",
   },
   {
     q: "Entro quando devo confermare la presenza?",
-    a: "TODO — data limite RSVP",
+    a: "Vi chiediamo di confermare la vostra presenza compilando il form entro e non oltre il 20 Aprile 2027.",
+    to: "/rsvp",
+    linkLabel: "Vai al form RSVP",
   },
+  {
+    q: "Ci sono opzioni per i bambini?",
+    a: "In location è presente un'area giochi dedicata ai bambini ed è possibile richiedere per loro il menù baby all'interno del form RSVP.",
+    to: "/rsvp",
+    linkLabel: "Vai al form RSVP",
+  },
+  {
+    q: "Come possiamo fare per il regalo di nozze?",
+    a: "Non abbiamo una lista nozze, ma potrete trovare tutte le informaizoni per aiutarci ad organizzare la nostra luna di miele nella sezione dedicata.",
+    to: "/lunadimiele",
+    linkLabel: "Vai alla Luna di Miele",
+  },
+  {
+    q: "Come si svolgerà la giornata?",
+    a: "L'arrivo degli ospiti è previsto per le ore 16:00, il programma completo lo troverete nella pagina dedicata. ",
+    to: "/programma",
+    linkLabel: "Vai al programma",
+  }
 ];

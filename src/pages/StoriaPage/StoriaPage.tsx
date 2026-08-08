@@ -1,5 +1,5 @@
 import texture from "../../assets/white-texture.png";
-import heroImg from "./Assets/DSC08076.jpg";
+import heroImg from "../GalleryPage/Assets/DSC07998.jpg";
 import silvia_piccola from "./Assets/silvia_piccola.jpg";
 import davide_piccolo from "./Assets/davide_piccolo.jpg";
 import nalapiccola from "./Assets/nala_piccola.jpg";

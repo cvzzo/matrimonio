@@ -1,8 +1,24 @@
+import { useState } from "react";
 import texture from "../../assets/white-texture.png";
 import heroImg from "./Assets/DSC08339.jpg";
 import "./LunaDiMielePage.css";
 
+const IBAN = "IT81D0301503200000006240105";
+const INTESTATARIO = "Silvia & Davide";
+
 export function LunaDiMielePage() {
+  const [copied, setCopied] = useState(false);
+
+  async function copyIban() {
+    try {
+      await navigator.clipboard.writeText(IBAN);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* clipboard non disponibile */
+    }
+  }
+
   return (
     <div
       className="ws-texture-section ws-texture-section--full"
@@ -19,35 +35,47 @@ export function LunaDiMielePage() {
       <div className="ws-page">
         <p className="ws-page-sub">Sardegna · Chia</p>
         <div className="ws-letter">
-          <p style={{ textAlign: "center" }}>
-            Il regalo più grande che possiate farci è la vostra presenza nel
-            nostro giorno più speciale, ma se desiderate accompagnarci anche
-            nei nostri primi passi da marito e moglie, abbiamo deciso di
-            raccogliere i vostri pensieri per la nostra luna di miele.
-          </p>
           <p>
-            La meta che abbiamo scelto è la Sardegna, un'isola magica, che
-            amiamo profondamente. Ci lasceremo cullare dalle meraviglie di
-            Chia, e dalla sua spettacolare costa di Su Giudeu, con le sue dune
-            di sabbia dorata e un mare così cristallino da togliere il fiato.
-          </p>
-          <p>
-            Ma c'è un motivo ancora più speciale che ci ha fatto battere il
-            cuore per questa destinazione: la possibilità di avere accanto a
-            noi Nala, la nostra cagnolina. Lei è a tutti gli effetti un
-            membro della nostra famiglia e non potevamo immaginare di
-            iniziare questo nuovo capitolo senza la sua allegria e le
-            impronte delle sue zampine sulla sabbia accanto alle nostre.
+            Verso la Nostra Luna di Miele La vostra presenza nel nostro giorno
+            più bello è in assoluto il regalo più grande che potessimo
+            desiderare.
             <br />
-            Grazie di cuore
+            Condividere questo inizio con le persone che amiamo è ciò che
+            renderà tutto davvero magico. Se oltre al vostro affetto e ai vostri
+            sorrisi desiderate aiutarci a realizzare un piccolo grande sogno,
+            potete regalarci un pezzetto della nostra Luna di Miele.
+            <br />
+            La destinazione è ancora tutta da decidere, ma stiamo già sognando
+            il nostro primo viaggio da marito e moglie: un'avventura speciale
+            dove collezionare i primi ricordi di questa nuova vita insieme.
+            <br />
+            Grazie di cuore per camminare al nostro fianco e per aiutarci a
+            spiccare il volo verso questo nuovo inizio!
           </p>
         </div>
         <div className="ws-letter-signature">Silvia &amp; Davide</div>
-        {/* TODO: Inserisci IBAN, intestatario e causale */}
-        <div className="ws-placeholder-block ws-lm-outro">
-          <p>💝 IBAN: TODO</p>
-          <p>Intestato a: TODO</p>
-          <p>Causale: TODO</p>
+
+        <div className="ws-gift-card">
+          <h3 className="ws-gift-title">Un pensiero per il viaggio</h3>
+          <div className="ws-gift-row">
+            <span className="ws-gift-label">IBAN</span>
+            <span className="ws-gift-value ws-gift-iban">{IBAN}</span>
+          </div>
+          <div className="ws-gift-row">
+            <span className="ws-gift-label">Intestato a</span>
+            <span className="ws-gift-value">{INTESTATARIO}</span>
+          </div>
+          <div className="ws-gift-row">
+            <span className="ws-gift-label">Causale</span>
+            <span className="ws-gift-value">Regalo di Nozze</span>
+          </div>
+          <button
+            type="button"
+            className="ws-gift-copy"
+            onClick={copyIban}
+          >
+            {copied ? "IBAN copiato ✓" : "Copia IBAN"}
+          </button>
         </div>
       </div>
     </div>

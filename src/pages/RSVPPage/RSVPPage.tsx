@@ -127,7 +127,7 @@ export function RSVPPage() {
 
         <div className="ws-hero-overlay" />
         <div className="ws-hero-title">
-          <h1>R. S. V. P.</h1>
+          <h1>R S V P</h1>
         </div>
       </section>
       <div className="ws-page">

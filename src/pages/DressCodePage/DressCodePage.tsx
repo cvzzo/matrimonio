@@ -33,9 +33,21 @@ export function DressCodePage() {
           </p>
         </div>
         <div className="ws-dc-grid">
-          {DRESS_CODE_AVOID.map(({ color, hex, note }) => (
+          {DRESS_CODE_AVOID.map(({ color, hexes, note }) => (
             <div className="ws-dc-card" key={color}>
-              <span className="ws-dc-swatch" style={{ background: hex }} />
+              {hexes.length > 1 ? (
+                <span className="ws-dc-swatch-duo">
+                  {hexes.map((h, i) => (
+                    <span
+                      key={i}
+                      className="ws-dc-swatch"
+                      style={{ background: h }}
+                    />
+                  ))}
+                </span>
+              ) : (
+                <span className="ws-dc-swatch" style={{ background: hexes[0] }} />
+              )}
               <h3>{color}</h3>
               <p>{note}</p>
             </div>

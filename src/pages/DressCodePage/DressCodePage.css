@@ -16,8 +16,24 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  /* border: 1px solid #e0d5c8; */
+  border: 1px solid #dfdddb;
   margin-bottom: 0.8rem;
+}
+/* Due colori: cerchi sovrapposti al centro (stile Venn) */
+.ws-dc-swatch-duo {
+  display: inline-flex;
+  margin-bottom: 0.8rem;
+}
+.ws-dc-swatch-duo .ws-dc-swatch {
+  margin-bottom: 0;
+  position: relative;
+}
+/* il rosso (primo) sopra il nero */
+.ws-dc-swatch-duo .ws-dc-swatch:first-child {
+  z-index: 1;
+}
+.ws-dc-swatch-duo .ws-dc-swatch + .ws-dc-swatch {
+  margin-left: -1rem;
 }
 .ws-dc-card h3 {
   font-family: "Montserrat", sans-serif;

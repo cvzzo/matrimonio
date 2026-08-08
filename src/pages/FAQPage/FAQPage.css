@@ -1,6 +1,6 @@
 /* === Stili pagina === */
 .ws-faq-item {
-  border-bottom: 1px solid #e0d5c8;
+  border-bottom: 1px solid #c8cfe0;
   padding: 1.2rem 0;
 }
 .ws-faq-q {
@@ -8,20 +8,67 @@
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #5a4a3a;
+  color: #17263A;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .ws-faq-toggle {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1;
   color: #4173B7;
+  transition: transform 0.3s ease;
+}
+.ws-faq-item.open .ws-faq-toggle {
+  transform: rotate(45deg);
+}
+/* Contenitore animato: altezza fluida con il trick grid 0fr -> 1fr */
+.ws-faq-a-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+.ws-faq-item.open .ws-faq-a-wrap {
+  grid-template-rows: 1fr;
 }
 .ws-faq-a {
+  overflow: hidden;
+  min-height: 0;
   font-size: 1rem;
-  color: #7a6050;
+  color: #263E5F;
   line-height: 1.7;
-  margin-top: 0.8rem;
   padding-left: 0.5rem;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.ws-faq-item.open .ws-faq-a {
+  opacity: 1;
+  transform: translateY(0);
+}
+.ws-faq-a > p {
+  padding-top: 0.8rem;
+}
+.ws-faq-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border: none;
+  background: #4173B7;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.ws-faq-btn:hover {
+  background: #263E5F;
 }
