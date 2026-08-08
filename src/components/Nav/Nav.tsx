@@ -16,15 +16,30 @@ function pathFor(id: string): string {
 export function Nav({ scrolled, menuOpen, onToggleMenu }: NavProps) {
   const location = useLocation();
   // Pagine con hero a tutta pagina: barra trasparente in cima come la home
-  const transparentTopPaths = ["/", "/storia", "/location"];
+  const transparentTopPaths = [
+    "/",
+    "/storia",
+    "/location",
+    "/programma",
+    "/dresscode",
+    "/lunadimiele",
+    "/gallery",
+  ];
   const hasHero = transparentTopPaths.includes(location.pathname);
+  // Pagine con hero fotografica scura: logo/hamburger chiari finché la barra è trasparente
+  const lightTop = [
+    "/programma",
+    "/dresscode",
+    "/lunadimiele",
+    "/gallery",
+  ].includes(location.pathname);
 
   return (
     <>
       <nav
         className={`ws-nav${scrolled || !hasHero ? " scrolled" : ""}${
-          menuOpen ? " menu-open" : ""
-        }`}
+          lightTop ? " light-top" : ""
+        }${menuOpen ? " menu-open" : ""}`}
       >
         <Link className="ws-nav-logo" to="/">
           S &amp; D

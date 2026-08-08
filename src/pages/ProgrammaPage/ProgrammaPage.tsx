@@ -1,4 +1,5 @@
 import texture from "../../assets/white-texture.png";
+import heroImg from "./Assets/DSC08279.jpg";
 import { PROGRAMMA_ITEMS } from "../../constants/wedding";
 import { PROGRAMMA_ICONS } from "./ProgrammaIcons";
 import "./ProgrammaPage.css";
@@ -9,8 +10,15 @@ export function ProgrammaPage() {
       className="ws-texture-section ws-texture-section--full"
       style={{ backgroundImage: `url(${texture})` }}
     >
+      <section className="ws-hero-villa">
+        <img src={heroImg} alt="Il Programma" className="villa" />
+
+        <div className="ws-hero-overlay" />
+        <div className="ws-hero-title">
+          <h1>Il Programma</h1>
+        </div>
+      </section>
       <div className="ws-page">
-        <h1 className="ws-page-title">Il Programma</h1>
         {/* TODO: Aggiorna la data se cambia */}
         {/* <p className="ws-page-sub">20 Giugno 2027</p>
         <div className="ws-placeholder-block ws-programma-venue">

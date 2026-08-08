@@ -96,16 +96,15 @@ function DessertIcon(props: IconProps) {
   );
 }
 
-function DiscoIcon(props: IconProps) {
+function ConfettiIcon(props: IconProps) {
   return (
     <Icon {...props}>
-      <path d="M12 4V2" />
-      <circle cx="12" cy="10" r="6" />
-      <path
-        d="M6 10h12M12 4v12M7.8 6.3l8.4 7.4M16.2 6.3 7.8 13.7"
-        strokeWidth={0.9}
-      />
-      <path d="M8 19h8M9 21h6" />
+      <path d="M4 20l3.4-9.6 6.2 6.2L4 20Z" />
+      <path d="M7.4 10.4c1.7-1.7 4.4-1.7 6.1 0 1.7 1.7 1.7 4.4 0 6.1" />
+      <path d="M13 3.2l.3.9c.3.8-.2 1.6-1 1.8-.6.1-1 .7-1 1.3v.6" strokeWidth={1.1} />
+      <path d="M20.8 11l-.8-.3c-.8-.3-1.6.2-1.8 1-.1.6-.6 1-1.2 1h-.6" strokeWidth={1.1} />
+      <path d="M20.8 3.2l-1.9.6c-.8.2-1.3 1-1.2 1.8.1.7-.5 1.3-1.2 1.3h-.3" strokeWidth={1.1} />
+      <path d="M16.5 2.5h.01M21 8h.01M12 8.5h.01" strokeWidth={1.4} />
     </Icon>
   );
 }
@@ -118,5 +117,5 @@ export const PROGRAMMA_ICONS: Record<string, (props: IconProps) => JSX.Element> 
   dinner: DinnerIcon,
   cake: CakeIcon,
   dessert: DessertIcon,
-  disco: DiscoIcon,
+  confetti: ConfettiIcon,
 };

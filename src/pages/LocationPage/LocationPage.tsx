@@ -14,8 +14,7 @@ export function LocationPage() {
 
         <div className="ws-hero-overlay" />
         <div className="ws-hero-title">
-          <h1>Villa Canton</h1>
-          <p>Trescore Balneario (BG)</p>
+          <h1>Location</h1>
         </div>
       </section>
       <div className="ws-page">

@@ -72,7 +72,7 @@ export const PROGRAMMA_ITEMS = [
     time: "23:00",
     title: "Si balla!",
     desc: "Si scende in pista per scatenarsi fino a notte fonda",
-    icon: "disco",
+    icon: "confetti",
   },
 ];
 

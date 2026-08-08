@@ -34,6 +34,13 @@
   color: #263E5F;
   text-shadow: none;
 }
+/* Programma: testo chiaro sopra l'immagine, scuro quando compare la barra */
+.ws-nav.light-top:not(.scrolled) .ws-nav-logo {
+  color: #fff;
+}
+.ws-nav.light-top:not(.scrolled) .ws-hamburger span {
+  background: #fff;
+}
 .ws-hamburger {
   background: none;
   border: none;

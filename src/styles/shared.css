@@ -25,7 +25,7 @@
 
 /* --- Contenitore pagina --- */
 .ws-page {
-  padding: 8rem 2rem 4rem;
+  padding: 2.5rem 2rem 4rem;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -136,7 +136,7 @@
   font-size: clamp(0.7rem, 2vw, 0.85rem);
   letter-spacing: 0.4em;
   color: rgba(255, 255, 255, 0.85);
-  margin-top: 0.8rem;
+  margin-top: 1.8rem;
 }
 @keyframes fadeUp {
   to {
@@ -147,6 +147,6 @@
 
 @media (max-width: 640px) {
   .ws-page {
-    padding: 6rem 1.2rem 3rem;
+    padding: 2.5rem 1.2rem 3rem;
   }
 }

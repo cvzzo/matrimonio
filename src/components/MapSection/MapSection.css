@@ -1,5 +1,5 @@
 .ws-map-section {
-  padding: 3rem 2rem 4rem;
+  padding: 0rem 2rem 4rem;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -15,7 +15,7 @@
 .ws-map-venue-name {
   font-family: "Bacalisties", cursive;
   font-size: 2rem;
-  color: #5a4a3a;
+  color: #4173B7;
   text-align: center;
   margin-bottom: 0.3rem;
 }
@@ -64,7 +64,7 @@
   display: inline-block;
   /* margin-top: 1.2rem; */
   padding: 0.75rem 2rem;
-  background: #5a4a3a;
+  background: #263E5F;
   color: #f0ebe3;
   font-family: "Montserrat", sans-serif;
   font-size: 0.72rem;
@@ -79,7 +79,7 @@
 
 @media (max-width: 640px) {
   .ws-map-section {
-    padding: 2rem 1.2rem 3rem;
+    padding: 0rem 1.2rem 3rem;
   }
   .ws-map-iframe-wrap iframe,
   .ws-map-placeholder {

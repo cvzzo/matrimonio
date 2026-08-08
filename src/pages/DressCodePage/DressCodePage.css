@@ -6,8 +6,8 @@
   margin-top: 2rem;
 }
 .ws-dc-card {
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid #e0d5c8;
+  background: #ffffff80;
+  /* border: 1px solid #5273A0; */
   padding: 1.5rem;
   text-align: center;
 }
@@ -16,7 +16,7 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  border: 1px solid #e0d5c8;
+  /* border: 1px solid #e0d5c8; */
   margin-bottom: 0.8rem;
 }
 .ws-dc-card h3 {
@@ -24,11 +24,11 @@
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #4173B7;
+  color: #263E5F;
   margin-bottom: 0.5rem;
 }
 .ws-dc-card p {
   font-size: 0.9rem;
-  color: #7a6050;
+  color: #17263A;
   line-height: 1.5;
 }

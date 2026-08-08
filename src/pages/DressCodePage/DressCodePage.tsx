@@ -1,4 +1,5 @@
 import texture from "../../assets/white-texture.png";
+import heroImg from "./Assets/DSC08239.jpg";
 import { DRESS_CODE_AVOID } from "../../constants/wedding";
 import "./DressCodePage.css";
 
@@ -8,8 +9,15 @@ export function DressCodePage() {
       className="ws-texture-section ws-texture-section--full"
       style={{ backgroundImage: `url(${texture})` }}
     >
+      <section className="ws-hero-villa">
+        <img src={heroImg} alt="Dress Code" className="villa" />
+
+        <div className="ws-hero-overlay" />
+        <div className="ws-hero-title">
+          <h1>Dress Code</h1>
+        </div>
+      </section>
       <div className="ws-page">
-        <h1 className="ws-page-title">Dress Code</h1>
         <p className="ws-page-sub">
           Non vediamo l'ora di vedervi al nostro grande giorno!
         </p>
@@ -20,7 +28,7 @@ export function DressCodePage() {
             riservato alcuni colori speciali per noi, per i testimoni e per le
             damigelle.{" "}
           </p>
-          <p style={{ textAlign: "center", fontWeight: "bolder", color: "black", textTransform: "uppercase" }}>
+          <p style={{ textAlign: "center", fontWeight: "bolder", color: "#263E5F", textTransform: "uppercase" }}>
             Vi chiediamo quindi di evitare:
           </p>
         </div>

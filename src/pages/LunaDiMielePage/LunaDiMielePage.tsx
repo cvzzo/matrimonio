@@ -1,4 +1,5 @@
 import texture from "../../assets/white-texture.png";
+import heroImg from "./Assets/DSC08339.jpg";
 import "./LunaDiMielePage.css";
 
 export function LunaDiMielePage() {
@@ -7,10 +8,16 @@ export function LunaDiMielePage() {
       className="ws-texture-section ws-texture-section--full"
       style={{ backgroundImage: `url(${texture})` }}
     >
+      <section className="ws-hero-villa">
+        <img src={heroImg} alt="Viaggio di Nozze" className="villa" />
+
+        <div className="ws-hero-overlay" />
+        <div className="ws-hero-title">
+          <h1>Viaggio di Nozze</h1>
+        </div>
+      </section>
       <div className="ws-page">
-        <h1 className="ws-page-title">Viaggio di Nozze</h1>
         <p className="ws-page-sub">Sardegna · Chia</p>
-        {/* TODO: Aggiungi la foto del viaggio (stile hero, come quella della Location) */}
         <div className="ws-letter">
           <p style={{ textAlign: "center" }}>
             Il regalo più grande che possiate farci è la vostra presenza nel
