@@ -4,7 +4,7 @@ import silvia_piccola from "./Assets/silvia_piccola.jpg";
 import davide_piccolo from "./Assets/davide_piccolo.jpg";
 import nalapiccola from "./Assets/nala_piccola.jpg";
 import maglione from "./Assets/davide_maglione.jpg";
-import bacio from "./Assets/bacio.jpg";
+import bacio from "./Assets/bacio.jpg"
 import nala_anello from "./Assets/NALA_ANELLO.jpg";
 import { FlowerDecoration } from "../../components/FlowerDecoration/FlowerDecoration";
 import "./StoriaPage.css";
