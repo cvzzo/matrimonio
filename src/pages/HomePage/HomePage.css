@@ -18,7 +18,7 @@
 .ws-letter {
   font-size: clamp(1rem, 2.5vw, 1.15rem);
   line-height: 1.85;
-  color: #3a2e24;
+  color: #17263A;
   text-align: left;
 }
 .ws-letter p {
@@ -111,7 +111,7 @@
   font-size: 0.72rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
   margin-bottom: 2.5rem;
 }
 .ws-countdown-grid {
@@ -136,7 +136,7 @@
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(3rem, 8vw, 5.5rem);
   font-weight: 300;
-  color: #3a2e24;
+  color: #17263A;
   line-height: 1;
   min-width: 2ch;
   display: block;
@@ -146,12 +146,12 @@
   font-size: 0.65rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
   margin-top: 0.4rem;
 }
 .ws-countdown-sep {
   font-size: clamp(2rem, 5vw, 4rem);
-  color: #c9b49a;
+  color: #263E5F;
   align-self: flex-start;
   padding-top: 0.3rem;
   font-weight: 300;
@@ -168,13 +168,13 @@
   font-size: 0.72rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
   text-align: center;
   margin-bottom: 3rem;
 }
 .citazione {
   font-style: italic;
-  color: #5a4a3a;
+  /* color: #5a4a3a; */
   line-height: 1.6;
   font-size: clamp(1.4rem, 3vw, 1.4rem);
   text-align: center;
@@ -184,7 +184,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
   margin-top: 1rem;
   text-align: center;
 }

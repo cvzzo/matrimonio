@@ -8,7 +8,7 @@
   font-size: 0.72rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
   text-align: center;
   margin-bottom: 0.6rem;
 }
@@ -23,7 +23,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 0.72rem;
   letter-spacing: 0.1em;
-  color: #a08060;
+  color: #263E5F;
   text-align: center;
   margin-bottom: 0.8rem;
 }
@@ -48,14 +48,14 @@
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  border: 1px dashed #c9b49a;
+  border: 1px dashed #263E5F;
 }
 .ws-map-placeholder span {
   font-family: "Montserrat", sans-serif;
   font-size: 0.72rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
 }
 .ws-map-cta {
   text-align: center;
@@ -74,7 +74,7 @@
   transition: background 0.2s;
 }
 .ws-map-btn:hover {
-  background: #3a2e24;
+  background: #17263A;
 }
 
 @media (max-width: 640px) {

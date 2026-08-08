@@ -1,5 +1,6 @@
 import texture from "../../assets/white-texture.png";
-import foto_quadrata from "../../assets/SILVIA_PICCOLA.jpg";
+import silvia_piccola from "./Assets/silvia_piccola.jpg";
+import davide_piccolo from "./Assets/davide_piccolo.jpg";
 import { FlowerDecoration } from "../../components/FlowerDecoration/FlowerDecoration";
 import "./StoriaPage.css";
 
@@ -22,7 +23,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row">
               <img
                 className="capitolo-storia-img"
-                src={foto_quadrata}
+                src={silvia_piccola}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"
@@ -40,7 +41,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row capitolo-storia-row--img-right">
               <img
                 className="capitolo-storia-img"
-                src={foto_quadrata}
+                src={davide_piccolo}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"
@@ -70,7 +71,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row">
               <img
                 className="capitolo-storia-img"
-                src={foto_quadrata}
+                src={silvia_piccola}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"
@@ -90,7 +91,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row capitolo-storia-row--img-right">
               <img
                 className="capitolo-storia-img"
-                src={foto_quadrata}
+                src={silvia_piccola}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"
@@ -116,7 +117,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row">
               <img
                 className="capitolo-storia-img"
-                src={foto_quadrata}
+                src={silvia_piccola}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"
@@ -145,7 +146,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row capitolo-storia-row--img-right">
               <img
                 className="capitolo-storia-img"
-                src={foto_quadrata}
+                src={silvia_piccola}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"

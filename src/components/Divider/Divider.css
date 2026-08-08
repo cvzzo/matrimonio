@@ -9,11 +9,11 @@
 .ws-divider-line {
   flex: 1;
   height: 1px;
-  background: #c9b49a;
+  background: #263E5F;
 }
 .ws-divider-diamond {
   width: 6px;
   height: 6px;
-  background: #c9b49a;
+  background: #263E5F;
   transform: rotate(45deg);
 }

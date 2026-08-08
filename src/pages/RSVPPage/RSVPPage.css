@@ -36,14 +36,14 @@
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
   text-align: center;
   margin-bottom: 3rem;
 }
 .ws-letter {
   font-size: clamp(1rem, 2.5vw, 1.15rem);
   line-height: 1.85;
-  color: #3a2e24;
+  color: #17263A;
   text-align: left;
 }
 .ws-letter p {
@@ -68,11 +68,11 @@
 .ws-form textarea {
   width: 100%;
   padding: 0.85rem 1rem;
-  border: 1px solid #c9b49a;
+  border: 1px solid #263E5F;
   background: rgba(255, 255, 255, 0.6);
   font-family: "Cormorant Garamond", serif;
   font-size: 1rem;
-  color: #3a2e24;
+  color: #17263A;
   outline: none;
   transition: border-color 0.2s;
 }
@@ -94,13 +94,13 @@
   transition: background 0.2s;
 }
 .ws-form button:hover {
-  background: #3a2e24;
+  background: #17263A;
 }
 .ws-form label {
   font-family: "Montserrat", sans-serif;
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
   margin-bottom: -0.5rem;
 }

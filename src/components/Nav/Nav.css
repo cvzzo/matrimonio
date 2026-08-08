@@ -15,17 +15,23 @@
   backdrop-filter: blur(8px);
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
 }
+.ws-nav.menu-open,
+.ws-nav.scrolled.menu-open {
+  background: #95a8ccfa;
+  backdrop-filter: none;
+  box-shadow: none;
+}
 .ws-nav-logo {
   font-family: "Bacalisties", cursive;
   font-size: 1.8rem;
-  color: #fff;
+  color: #263E5F;
   cursor: pointer;
   transition: color 0.4s;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   }
 .ws-nav.scrolled .ws-nav-logo {
-  color: #5a4a3a;
+  color: #263E5F;
   text-shadow: none;
 }
 .ws-hamburger {
@@ -41,11 +47,11 @@
   display: block;
   width: 24px;
   height: 1.5px;
-  background: #fff;
+  background: #263E5F;
   transition: background 0.4s, transform 0.3s, opacity 0.3s;
 }
 .ws-nav.scrolled .ws-hamburger span {
-  background: #5a4a3a;
+  background: #263E5F;
 }
 .ws-hamburger.open span:nth-child(1) {
   transform: translateY(6.5px) rotate(45deg);
@@ -61,7 +67,7 @@
   position: fixed;
   inset: 0;
   z-index: 99;
-  background: rgba(90, 74, 58, 0.97);
+  background: #95a8ccfa;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,12 +86,16 @@
   font-size: 0.85rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #f0ebe3;
+  color: #263e5f;
   text-decoration: none;
   transition: color 0.2s;
+  font-weight: 500;
 }
 .ws-menu-overlay a:hover {
-  color: #d4b896;
+  color: #385b8c;
+}
+.ws-menu-overlay a.active {
+  color: #ffffff;
 }
 
 @media (max-width: 640px) {

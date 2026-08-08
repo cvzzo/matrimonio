@@ -36,13 +36,13 @@
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
   text-align: center;
   margin-bottom: 3rem;
 }
 .ws-placeholder-block {
   background: rgba(200, 180, 160, 0.12);
-  border: 1px dashed #c9b49a;
+  border: 1px dashed #263E5F;
   padding: 3rem 2rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -77,7 +77,7 @@
   top: 0;
   bottom: 0;
   width: 1px;
-  background: #c9b49a;
+  background: #263E5F;
   transform: translateX(-50%);
 }
 .ws-tlv2-row {
@@ -95,12 +95,12 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  border: 1px solid #c9b49a;
+  border: 1px solid #263E5F;
   background: #f8f6f2;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #a08060;
+  color: #263E5F;
   position: relative;
   z-index: 2;
   /* centra il pallino verticalmente sull'orario */
@@ -129,7 +129,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   letter-spacing: 0.15em;
-  color: #a08060;
+  color: #263E5F;
   white-space: nowrap;
 }
 .ws-tlv2-title {
@@ -138,7 +138,7 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #3a2e24;
+  color: #17263A;
   margin-top: 0.5rem;
 }
 .ws-tlv2-desc {

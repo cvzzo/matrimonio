@@ -19,7 +19,11 @@ export function Nav({ scrolled, menuOpen, onToggleMenu }: NavProps) {
 
   return (
     <>
-      <nav className={`ws-nav${scrolled || !isHome ? " scrolled" : ""}`}>
+      <nav
+        className={`ws-nav${scrolled || !isHome ? " scrolled" : ""}${
+          menuOpen ? " menu-open" : ""
+        }`}
+      >
         <Link className="ws-nav-logo" to="/">
           S &amp; D
         </Link>
@@ -35,11 +39,20 @@ export function Nav({ scrolled, menuOpen, onToggleMenu }: NavProps) {
       </nav>
 
       <div className={`ws-menu-overlay${menuOpen ? " open" : ""}`}>
-        {NAV_ITEMS.map((item: NavItem) => (
-          <Link key={item.id} to={pathFor(item.id)}>
-            {item.label}
-          </Link>
-        ))}
+        {NAV_ITEMS.map((item: NavItem) => {
+          const path = pathFor(item.id);
+          const isActive = location.pathname === path;
+          return (
+            <Link
+              key={item.id}
+              to={path}
+              className={isActive ? "active" : undefined}
+              aria-current={isActive ? "page" : undefined}
+            >
+              {item.label}
+            </Link>
+          );
+        })}
       </div>
     </>
   );

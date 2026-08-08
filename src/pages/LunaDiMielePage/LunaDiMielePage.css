@@ -36,13 +36,13 @@
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
   text-align: center;
   margin-bottom: 3rem;
 }
 .ws-placeholder-block {
   background: rgba(200, 180, 160, 0.12);
-  border: 1px dashed #c9b49a;
+  border: 1px dashed #263E5F;
   padding: 3rem 2rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -57,7 +57,7 @@
 .ws-letter {
   font-size: clamp(1rem, 2.5vw, 1.15rem);
   line-height: 1.85;
-  color: #3a2e24;
+  color: #17263A;
   text-align: left;
 }
 .ws-letter p {
@@ -68,7 +68,7 @@
   font-size: 0.9rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #a08060;
+  color: #263E5F;
   margin-top: 1rem;
   text-align: center;
 }
