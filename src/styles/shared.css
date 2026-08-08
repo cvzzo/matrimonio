@@ -60,10 +60,8 @@
   margin-bottom: 1.8rem;
 }
 .ws-letter-signature {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-family: "Bacalisties", cursive;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
   color: #4173B7;
   margin-top: 1rem;
   text-align: center;

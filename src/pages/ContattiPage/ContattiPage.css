@@ -1,32 +1,102 @@
 /* === Stili pagina === */
 /* Override: su questa pagina il titolo è nel blu di brand */
 .ws-page-title {
-  color: #4173B7;
+  color: #4173b7;
 }
-/* Blocchi contatto cliccabili (WhatsApp / email) */
-.ws-contatti-link {
-  display: block;
+/* Card contatto cliccabili (WhatsApp / email) */
+.ws-contatti-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 460px;
+  margin: 0 auto;
+}
+.ws-contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1rem 1.3rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid #cdd8e8;
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s,
+    background 0.2s;
 }
-.ws-contatti-link:hover {
-  background: rgba(65, 115, 183, 0.12);
-  border-color: #4173B7;
+.ws-contact-card:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #4173b7;
+  box-shadow: 0 8px 24px rgba(38, 62, 95, 0.12);
+}
+.ws-contact-icon {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #4173b7;
+  background: #f8f6f2;
+  color: #4173b7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ws-contact-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.ws-contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+.ws-contact-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #4173b7;
+}
+.ws-contact-value {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: #17263a;
+  overflow-wrap: anywhere;
 }
 .ws-contatti-outro {
   text-align: center;
   margin-top: 3rem;
 }
 .ws-contatti-outro-title {
-  font-family: "Bacalisties", cursive;
-  font-size: 2rem;
-  color: #263E5F;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  color: #263e5f;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
 }
+
+.ws-contatti-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #263e5f;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
 .ws-contatti-outro-sub {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1rem;
-  color: #263E5F;
-  margin-top: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  color: #263e5f;
+  text-transform: uppercase;
+    letter-spacing: 0.3em;
+
+  /* margin-top: 0.5rem; */
 }

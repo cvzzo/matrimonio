@@ -38,8 +38,9 @@ export function LunaDiMielePage() {
             membro della nostra famiglia e non potevamo immaginare di
             iniziare questo nuovo capitolo senza la sua allegria e le
             impronte delle sue zampine sulla sabbia accanto alle nostre.
+            <br />
+            Grazie di cuore
           </p>
-          <p style={{ textAlign: "center" }}>Grazie di cuore,</p>
         </div>
         <div className="ws-letter-signature">Silvia &amp; Davide</div>
         {/* TODO: Inserisci IBAN, intestatario e causale */}
