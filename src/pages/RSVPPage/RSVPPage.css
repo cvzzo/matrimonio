@@ -1,4 +1,15 @@
 /* === Stili pagina === */
+/* La foto ha il soggetto in basso.
+   Desktop (hero larga e bassa): posizione intermedia per non tagliare le teste.
+   Mobile (hero stretta e alta): si può mostrare tutta la parte bassa. */
+.villa--bottom {
+  object-position: center 68%;
+}
+@media (max-width: 640px) {
+  .villa--bottom {
+    object-position: center bottom;
+  }
+}
 .ws-form {
   display: flex;
   flex-direction: column;
@@ -12,21 +23,33 @@
   width: 100%;
   padding: 0.85rem 1rem;
   border: 1px solid #4173B7;
+  border-radius: 0;
   background: rgba(255, 255, 255, 0.6);
   font-family: "Cormorant Garamond", serif;
   font-size: 1rem;
   color: #17263A;
   outline: none;
   transition: border-color 0.2s;
+  /* iOS arrotonda e stila di suo i controlli: azzeriamo lo stile nativo */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* Freccia custom per le select (rimossa con appearance: none) */
+.ws-form select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' stroke='%234173B7' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
 }
 .ws-form input:focus,
 .ws-form select:focus,
 .ws-form textarea:focus {
-  border-color: #8a6a4a;
+  border-color: #5273A0;
 }
 .ws-form button {
   padding: 1rem;
-  background: #5a4a3a;
+  background: #263E5F;
   color: #f0ebe3;
   border: none;
   cursor: pointer;
@@ -46,4 +69,87 @@
   text-transform: uppercase;
   color: #4173B7;
   margin-bottom: -0.5rem;
+}
+
+/* Card per ogni persona della famiglia */
+.ws-rsvp-people {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ws-rsvp-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #cdd8e8;
+  padding: 1rem;
+}
+.ws-rsvp-card-num {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #4173B7;
+  margin-bottom: 0.7rem;
+}
+.ws-rsvp-card-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+}
+/* Il select tipo occupa tutta la larghezza sotto nome/cognome */
+.ws-rsvp-card-fields select {
+  grid-column: 1 / -1;
+}
+.ws-rsvp-card-label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #4173B7;
+  margin-top: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.ws-rsvp-radio {
+  display: flex;
+  gap: 1.5rem;
+}
+.ws-rsvp-radio label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  color: #17263A;
+  cursor: pointer;
+}
+.ws-rsvp-radio input[type="radio"] {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  accent-color: #4173B7;
+  cursor: pointer;
+  /* ripristina l'aspetto nativo del radio (azzerato sopra per gli altri input) */
+  -webkit-appearance: radio;
+  appearance: auto;
+}
+.ws-rsvp-card-allergies {
+  margin-top: 0.7rem;
+}
+.ws-rsvp-summary {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4173B7;
+  text-align: center;
+  margin-top: -0.2rem;
+}
+
+@media (max-width: 640px) {
+  .ws-rsvp-card-fields {
+    grid-template-columns: 1fr;
+  }
 }
