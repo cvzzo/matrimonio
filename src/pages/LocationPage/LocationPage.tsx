@@ -2,7 +2,6 @@ import texture from "../../assets/white-texture.png";
 import villa from "../../assets/villa.jpg";
 import { FlowerDecoration } from "../../components/FlowerDecoration/FlowerDecoration";
 import { MapSection } from "../../components/MapSection/MapSection";
-import "./LocationPage.css";
 
 export function LocationPage() {
   return (

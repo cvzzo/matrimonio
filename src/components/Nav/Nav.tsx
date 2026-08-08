@@ -15,12 +15,14 @@ function pathFor(id: string): string {
 
 export function Nav({ scrolled, menuOpen, onToggleMenu }: NavProps) {
   const location = useLocation();
-  const isHome = location.pathname === "/";
+  // Pagine con hero a tutta pagina: barra trasparente in cima come la home
+  const transparentTopPaths = ["/", "/storia", "/location"];
+  const hasHero = transparentTopPaths.includes(location.pathname);
 
   return (
     <>
       <nav
-        className={`ws-nav${scrolled || !isHome ? " scrolled" : ""}${
+        className={`ws-nav${scrolled || !hasHero ? " scrolled" : ""}${
           menuOpen ? " menu-open" : ""
         }`}
       >

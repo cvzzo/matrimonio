@@ -1,6 +1,11 @@
 import texture from "../../assets/white-texture.png";
+import heroImg from "./Assets/DSC08076.jpg";
 import silvia_piccola from "./Assets/silvia_piccola.jpg";
 import davide_piccolo from "./Assets/davide_piccolo.jpg";
+import nalapiccola from "./Assets/nala_piccola.jpg";
+import maglione from "./Assets/davide_maglione.jpg";
+import bacio from "./Assets/bacio.jpg";
+import nala_anello from "./Assets/NALA_ANELLO.jpg";
 import { FlowerDecoration } from "../../components/FlowerDecoration/FlowerDecoration";
 import "./StoriaPage.css";
 
@@ -10,9 +15,15 @@ export function StoriaPage() {
       className="ws-texture-section ws-texture-section--full"
       style={{ backgroundImage: `url(${texture})` }}
     >
-      <div className="ws-page">
-        <h1 className="ws-page-title">La Nostra Storia</h1>
+      <section className="ws-hero-villa">
+        <img src={heroImg} alt="La nostra storia" className="villa" />
 
+        <div className="ws-hero-overlay" />
+        <div className="ws-hero-title">
+          <h1>La nostra storia</h1>
+        </div>
+      </section>
+      <div className="ws-page">
         <div className="ws-letter">
           <div className="capitolo-storia">
             <h2 className="titolo-capitolo-storia">Le nostre radici</h2>
@@ -23,7 +34,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row">
               <img
                 className="capitolo-storia-img"
-                src={silvia_piccola}
+                src={davide_piccolo}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"
@@ -41,7 +52,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row capitolo-storia-row--img-right">
               <img
                 className="capitolo-storia-img"
-                src={davide_piccolo}
+                src={silvia_piccola}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"
@@ -71,7 +82,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row">
               <img
                 className="capitolo-storia-img"
-                src={silvia_piccola}
+                src={maglione}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"
@@ -91,7 +102,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row capitolo-storia-row--img-right">
               <img
                 className="capitolo-storia-img"
-                src={silvia_piccola}
+                src={bacio}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"
@@ -117,7 +128,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row">
               <img
                 className="capitolo-storia-img"
-                src={silvia_piccola}
+                src={nalapiccola}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"
@@ -146,7 +157,7 @@ export function StoriaPage() {
             <div className="capitolo-storia-row capitolo-storia-row--img-right">
               <img
                 className="capitolo-storia-img"
-                src={silvia_piccola}
+                src={nala_anello}
                 width="200"
                 height="200"
                 alt="Immagine della nostra storia"

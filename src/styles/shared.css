@@ -1,4 +1,8 @@
-/* === Layout condiviso (ex styles/shared.css) === */
+/* === Stili condivisi tra le pagine ===
+   Importato globalmente una sola volta in main.tsx.
+   Le singole pagine contengono solo i propri stili specifici. */
+
+/* --- Sezione con texture di sfondo --- */
 .ws-texture-section {
   position: relative;
   background-size: cover;
@@ -18,11 +22,34 @@
 .ws-texture-section--full {
   min-height: 100vh;
 }
+
+/* --- Contenitore pagina --- */
 .ws-page {
   padding: 8rem 2rem 4rem;
   max-width: 800px;
   margin: 0 auto;
 }
+
+/* --- Titoli / sottotitoli --- */
+.ws-page-title {
+  font-family: "Bacalisties", cursive;
+  font-size: clamp(1.5rem, 7.5vw, 4rem);
+  white-space: nowrap;
+  color: #5a4a3a;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.ws-page-sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #4173B7;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* --- Testo tipo lettera --- */
 .ws-letter {
   font-size: clamp(1rem, 2.5vw, 1.15rem);
   line-height: 1.85;
@@ -32,13 +59,33 @@
 .ws-letter p {
   margin-bottom: 1.8rem;
 }
-@media (max-width: 640px) {
-  .ws-page {
-    padding: 6rem 1.2rem 3rem;
-  }
+.ws-letter-signature {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #4173B7;
+  margin-top: 1rem;
+  text-align: center;
 }
 
-/* === Stili pagina === */
+/* --- Blocco placeholder --- */
+.ws-placeholder-block {
+  background: rgba(200, 180, 160, 0.12);
+  border: 1px dashed #4173B7;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.ws-placeholder-block p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #b09070;
+}
+
+/* --- Hero --- */
 .ws-hero-villa {
   position: relative;
   height: 60vh;
@@ -95,5 +142,11 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .ws-page {
+    padding: 6rem 1.2rem 3rem;
   }
 }
