@@ -1,4 +1,5 @@
 import texture from "../../assets/white-texture.png";
+import heroImg from "./Assets/DSC08163.jpg";
 import "./ContattiPage.css";
 
 export function ContattiPage() {
@@ -7,21 +8,38 @@ export function ContattiPage() {
       className="ws-texture-section ws-texture-section--full"
       style={{ backgroundImage: `url(${texture})` }}
     >
+      <section className="ws-hero-villa">
+        <img src={heroImg} alt="Contatti" className="villa" />
+
+        <div className="ws-hero-overlay" />
+        <div className="ws-hero-title">
+          <h1>Contatti</h1>
+        </div>
+      </section>
       <div className="ws-page">
-        <h1 className="ws-page-title">Contatti</h1>
         <p className="ws-page-sub">Siamo qui per ogni domanda</p>
-        {/* TODO: Sostituisci con il numero reale di Silvia */}
-        <div className="ws-placeholder-block">
-          <p>📱 TODO — Telefono Silvia: +39 000 000 0000</p>
-        </div>
-        {/* TODO: Sostituisci con il numero reale di Davide */}
-        <div className="ws-placeholder-block">
-          <p>📱 TODO — Telefono Davide: +39 000 000 0000</p>
-        </div>
-        {/* TODO: Sostituisci con l'email di contatto */}
-        <div className="ws-placeholder-block">
-          <p>✉️ TODO — Email: silvia.davide2027@email.com</p>
-        </div>
+        <a
+          className="ws-placeholder-block ws-contatti-link"
+          href="https://wa.me/393486546406"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p>💬 Silvia: +39 348 654 6406</p>
+        </a>
+        <a
+          className="ws-placeholder-block ws-contatti-link"
+          href="https://wa.me/393388097059"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p>💬 Davide: +39 338 809 7059</p>
+        </a>
+        <a
+          className="ws-placeholder-block ws-contatti-link"
+          href="mailto:silviaedavide2027@gmail.com"
+        >
+          <p>✉️ silviaedavide2027@gmail.com</p>
+        </a>
         <div className="ws-contatti-outro">
           <p className="ws-contatti-outro-title">Non esitare a scriverci!</p>
           <p className="ws-contatti-outro-sub">

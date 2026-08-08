@@ -3,6 +3,18 @@
 .ws-page-title {
   color: #4173B7;
 }
+/* Blocchi contatto cliccabili (WhatsApp / email) */
+.ws-contatti-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+.ws-contatti-link:hover {
+  background: rgba(65, 115, 183, 0.12);
+  border-color: #4173B7;
+}
 .ws-contatti-outro {
   text-align: center;
   margin-top: 3rem;
@@ -10,11 +22,11 @@
 .ws-contatti-outro-title {
   font-family: "Bacalisties", cursive;
   font-size: 2rem;
-  color: #7a6050;
+  color: #263E5F;
 }
 .ws-contatti-outro-sub {
   font-family: "Cormorant Garamond", serif;
   font-size: 1rem;
-  color: #4173B7;
+  color: #263E5F;
   margin-top: 0.5rem;
 }

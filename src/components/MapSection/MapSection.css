@@ -15,7 +15,7 @@
 .ws-map-venue-name {
   font-family: "Bacalisties", cursive;
   font-size: 2rem;
-  color: #4173B7;
+  color: #263E5F;
   text-align: center;
   margin-bottom: 0.3rem;
 }
@@ -23,7 +23,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 0.72rem;
   letter-spacing: 0.1em;
-  color: #4173B7;
+  color: #263E5F;
   text-align: center;
   margin-bottom: 0.8rem;
 }
@@ -74,7 +74,7 @@
   transition: background 0.2s;
 }
 .ws-map-btn:hover {
-  background: #17263A;
+  background: #5273A0;
 }
 
 @media (max-width: 640px) {
