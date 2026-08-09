@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
-import texture from "../../assets/white-texture.png";
-import heroImg from "./Assets/DSC08163.jpg";
+import texture from "../../assets/white-texture.png?quality=75&format=webp";
+import heroImg from "./Assets/DSC08163.jpg?w=1920&quality=80&format=webp";
 import "./ContattiPage.css";
 
 function WhatsAppIcon(props: SVGProps<SVGSVGElement>) {

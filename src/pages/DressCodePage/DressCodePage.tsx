@@ -1,5 +1,5 @@
-import texture from "../../assets/white-texture.png";
-import heroImg from "./Assets/DSC08239.jpg";
+import texture from "../../assets/white-texture.png?quality=75&format=webp";
+import heroImg from "./Assets/DSC08239.jpg?w=1920&quality=80&format=webp";
 import { DRESS_CODE_AVOID } from "../../constants/wedding";
 import "./DressCodePage.css";
 

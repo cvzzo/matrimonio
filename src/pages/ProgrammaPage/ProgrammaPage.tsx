@@ -1,5 +1,5 @@
-import texture from "../../assets/white-texture.png";
-import heroImg from "./Assets/DSC08279.jpg";
+import texture from "../../assets/white-texture.png?quality=75&format=webp";
+import heroImg from "./Assets/DSC08279.jpg?w=1920&quality=80&format=webp";
 import { PROGRAMMA_ITEMS } from "../../constants/wedding";
 import { PROGRAMMA_ICONS } from "./ProgrammaIcons";
 import "./ProgrammaPage.css";

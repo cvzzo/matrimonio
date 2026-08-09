@@ -1,18 +1,26 @@
 import { useEffect, useState } from "react";
-import texture from "../../assets/white-texture.png";
-import heroImg from "./Assets/DSC08297.jpg";
+import texture from "../../assets/white-texture.png?quality=75&format=webp";
+import heroImg from "./Assets/DSC08297.jpg?w=1920&quality=80&format=webp";
 import "./GalleryPage.css";
 
-// Importa automaticamente tutte le foto presenti in ./Assets
-const photoModules = import.meta.glob<string>("./Assets/*.{jpg,jpeg,JPG,JPEG,png,PNG}", {
+// Thumbnail leggere per la griglia
+const thumbModules = import.meta.glob<string>("./Assets/*.jpg", {
   eager: true,
   import: "default",
+  query: "?w=600&quality=70&format=webp",
 });
-const photos = Object.entries(photoModules)
-  .sort(([a], [b]) => a.localeCompare(b))
-  .map(([path, src]) => ({
-    src,
+// Versione grande, caricata solo quando si apre il lightbox
+const fullModules = import.meta.glob<string>("./Assets/*.jpg", {
+  eager: true,
+  import: "default",
+  query: "?w=1600&quality=80&format=webp",
+});
+const photos = Object.keys(thumbModules)
+  .sort((a, b) => a.localeCompare(b))
+  .map((path) => ({
     name: path.split("/").pop() ?? "",
+    thumb: thumbModules[path],
+    full: fullModules[path],
   }));
 
 export function GalleryPage() {
@@ -57,11 +65,11 @@ export function GalleryPage() {
           {photos.map((photo) => (
             <img
               key={photo.name}
-              src={photo.src}
+              src={photo.thumb}
               alt="Silvia e Davide"
               loading="lazy"
               className="ws-gallery-img"
-              onClick={() => setOpenSrc(photo.src)}
+              onClick={() => setOpenSrc(photo.full)}
             />
           ))}
         </div>

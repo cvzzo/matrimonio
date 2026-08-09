@@ -1,4 +1,4 @@
-import texture from "../../assets/white-texture.png";
+import texture from "../../assets/white-texture.png?quality=75&format=webp";
 import video from "../../assets/video.mp4";
 import { Divider } from "../../components/Divider/Divider";
 import { FlowerDecoration } from "../../components/FlowerDecoration/FlowerDecoration";

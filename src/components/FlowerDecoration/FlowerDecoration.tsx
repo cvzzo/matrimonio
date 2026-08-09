@@ -1,4 +1,4 @@
-import fiori from "../../assets/nuovifiori.png";
+import fiori from "../../assets/nuovifiori.png?w=1600&quality=80&format=webp";
 import "./FlowerDecoration.css";
 
 export function FlowerDecoration() {

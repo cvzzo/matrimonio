@@ -1,6 +1,6 @@
 import { useState } from "react";
-import texture from "../../assets/white-texture.png";
-import heroImg from "./Assets/DSC08339.jpg";
+import texture from "../../assets/white-texture.png?quality=75&format=webp";
+import heroImg from "./Assets/DSC08339.jpg?w=1920&quality=80&format=webp";
 import "./LunaDiMielePage.css";
 
 const IBAN = "IT81D0301503200000006240105";

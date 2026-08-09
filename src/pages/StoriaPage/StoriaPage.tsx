@@ -1,11 +1,11 @@
-import texture from "../../assets/white-texture.png";
-import heroImg from "../GalleryPage/Assets/DSC07998.jpg";
-import silvia_piccola from "./Assets/silvia_piccola.jpg";
-import davide_piccolo from "./Assets/davide_piccolo.jpg";
-import nalapiccola from "./Assets/nala_piccola.jpg";
-import maglione from "./Assets/davide_maglione.jpg";
-import bacio from "./Assets/bacio.jpg"
-import nala_anello from "./Assets/NALA_ANELLO.jpg";
+import texture from "../../assets/white-texture.png?quality=75&format=webp";
+import heroImg from "../GalleryPage/Assets/DSC07998.jpg?w=1920&quality=80&format=webp";
+import silvia_piccola from "./Assets/silvia_piccola.jpg?w=400&quality=80&format=webp";
+import davide_piccolo from "./Assets/davide_piccolo.jpg?w=400&quality=80&format=webp";
+import nalapiccola from "./Assets/nala_piccola.jpg?w=400&quality=80&format=webp";
+import maglione from "./Assets/davide_maglione.jpg?w=400&quality=80&format=webp";
+import bacio from "./Assets/bacio.jpg?w=400&quality=80&format=webp";
+import nala_anello from "./Assets/NALA_ANELLO.jpg?w=400&quality=80&format=webp";
 import { FlowerDecoration } from "../../components/FlowerDecoration/FlowerDecoration";
 import "./StoriaPage.css";
 

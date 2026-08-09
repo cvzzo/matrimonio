@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import texture from "../../assets/white-texture.png";
-import faqImg from "./Assets/DSC08076.jpg";
+import texture from "../../assets/white-texture.png?quality=75&format=webp";
+import faqImg from "./Assets/DSC08076.jpg?w=1920&quality=80&format=webp";
 import { FAQS } from "../../constants/wedding";
 import "./FAQPage.css";
 

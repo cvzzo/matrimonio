@@ -1,5 +1,5 @@
-import texture from "../../assets/white-texture.png";
-import villa from "../../assets/villa.jpg";
+import texture from "../../assets/white-texture.png?quality=75&format=webp";
+import villa from "../../assets/villa.jpg?w=1920&quality=80&format=webp";
 import { FlowerDecoration } from "../../components/FlowerDecoration/FlowerDecoration";
 import { MapSection } from "../../components/MapSection/MapSection";
 
